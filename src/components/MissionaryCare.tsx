@@ -74,7 +74,7 @@ const QUERY = `{
   },
 
   "events": *[
-    _type == "ministryEvent" &&
+    _type == "upcomingEvent" &&
     ministry == "missionary-care" &&
     dateTime(endsAt) > dateTime(now())
   ] | order(startsAt asc){

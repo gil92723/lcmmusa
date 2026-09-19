@@ -43,7 +43,7 @@ const HEALTH_QUERY = `{
   },
 
   "events": *[
-    _type == "ministryEvent" &&
+    _type == "upcomingEvent" &&
     ministry == "health" &&
     dateTime(endsAt) > dateTime(now())
   ] | order(startsAt asc){
