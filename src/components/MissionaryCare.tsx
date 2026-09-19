@@ -166,18 +166,20 @@ export default function MissionaryCare() {
           return (
             <article
               key={profile._id}
-              className="programs-section-1-box-1 overflow-hidden rounded-2xl"
+              className="programs-section-1-box-1 flex flex-col overflow-hidden rounded-2xl md:flex-row"
             >
               {photo && (
-                <img
-                  src={photo}
-                  alt={name}
-                  loading="lazy"
-                  className="h-72 w-full object-contain"
-                />
+                <div className="w-full shrink-0 md:w-64">
+                  <img
+                    src={photo}
+                    alt={name}
+                    loading="lazy"
+                    className="max-h-80 w-full object-contain object-top"
+                  />
+                </div>
               )}
 
-              <div className="space-y-4 p-6">
+              <div className="min-w-0 flex-1 space-y-4 p-6">
                 <h4 className="text-xl font-bold home-hero-section-1-title-1">
                   {name}
                 </h4>
