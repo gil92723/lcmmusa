@@ -52,12 +52,12 @@ const ministries = [
 const tabs = ministries.slice(0, 5)
 
 // Shared by the homepage and Ministries page.
-export function MinistryCards() {
+export function MinistryCards({ limit }: { limit?: number }) {
   const { text, attrs, label } = usePageCopy("ministries")
 
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {ministries.map((ministry) => (
+      {ministries.slice(0, limit).map((ministry) => (
         <Link
           key={ministry.id}
           to={`/ministries?tab=${ministry.id}`}

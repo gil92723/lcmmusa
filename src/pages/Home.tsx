@@ -217,9 +217,39 @@ export default function Home() {
       {/* programs */}
       <section
         id="programs"
-        className="transition-colors duration-300 programs programs-section-1">
-          <div className="max-w-6xl mx-auto px-6">
-            <MinistryCards />
+        className="transition-colors duration-300 programs programs-section-1"
+      >
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-xl">
+              <h2
+                {...attrs(
+                  "programs.heading-1",
+                  "mb-4 text-4xl font-bold home-hero-section-1-title-1",
+                )}
+              >
+                {text("programs.heading-1")}
+              </h2>
+
+              <p
+                {...attrs(
+                  "programs.paragraph-1",
+                  "text-lg home-hero-section-1-text-2",
+                )}
+              >
+                {text("programs.paragraph-1")}
+              </p>
+            </div>
+
+            <AppLink
+              href="ministries.html"
+              className="shrink-0 text-sm font-semibold underline underline-offset-4 home-hero-section-1-text-1"
+            >
+              {label("Explore all ministries →", "探索所有事工 →")}
+            </AppLink>
+          </div>
+
+          <MinistryCards limit={3} />
         </div>
       </section>
       {/* testimonies-preview */}
