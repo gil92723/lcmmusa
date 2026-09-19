@@ -41,7 +41,7 @@
   display: block;
   width: 100%;
   height: auto;
-  max-height: 280px;
+  max-height: 360px;
   object-fit: contain;
 }
 
@@ -53,6 +53,6 @@
 
 @media (min-width: 768px) {
   .missionary-profile--with-photo {
-    grid-template-columns: 240px minmax(0, 1fr);
+    grid-template-columns: 360px minmax(0, 1fr);
   }
 }
