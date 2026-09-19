@@ -11,10 +11,37 @@ import {
 } from "@/lib/ui"
 import MinistryCarousel from "@/components/MinistryCarousel"
 import CommunityBoard from "@/components/CommunityBoard"
+import useSanityQuery from "@/sanity/useSanityQuery"
+import {
+  HOMEPAGE_VIDEO_QUERY,
+  youtubeEmbedUrl,
+  type MediaVideo,
+} from "@/sanity/videos"
 
 export default function Home() {
-  const { text, attrs, label } = usePageCopy("index")
+  const { text, attrs, label , lang} = usePageCopy("index")
   const [featurePlaying, setFeaturePlaying] = useState(false)
+
+  const {
+    data: featuredVideo,
+    loading: videoLoading,
+    error: videoError,
+    retry: retryVideo,
+  } = useSanityQuery<MediaVideo | null>(HOMEPAGE_VIDEO_QUERY)
+
+  const videoEmbedUrl = featuredVideo
+    ? youtubeEmbedUrl(featuredVideo.youtubeUrl)
+    : null
+
+  const videoSrc =
+    featuredVideo && featurePlaying
+      ? youtubeEmbedUrl(featuredVideo.youtubeUrl, true)
+      : null
+
+  const videoTitle =
+    lang === "zh"
+      ? featuredVideo?.titleZh || featuredVideo?.titleEn || "影片"
+      : featuredVideo?.titleEn || featuredVideo?.titleZh || "Video"
   return (
     <>
       {/* home-hero */}
@@ -113,48 +140,61 @@ export default function Home() {
             {text("film.paragraph-2")}
           </p>
           <div className="relative w-full rounded-2xl overflow-hidden film-section-1-box-1">
+            {videoLoading && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              Loading video…
+            </div>
+          )}
+
+          {videoError && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+              <p>Unable to load the video.</p>
+              <button type="button" onClick={retryVideo}>
+                Try again
+              </button>
+            </div>
+          )}
+
+          {!videoLoading && !videoError && !featuredVideo && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              No featured video has been published yet.
+            </div>
+          )}
+
+          {videoEmbedUrl && (
             <iframe
               {...attrs(
                 "film.iframe-1",
                 "absolute inset-0 w-full h-full film-section-1-iframe-1",
               )}
-              allow="\n                  accelerometer;\n                  autoplay;\n                  clipboard-write;\n                  encrypted-media;\n                  gyroscope;\n                  picture-in-picture;\n                "
-              allowFullScreen={true}
+              src={videoSrc ?? undefined}
+              title={videoTitle}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
               loading="lazy"
-              data-pending-src="https://www.youtube.com/embed/?listType=user_uploads&list=lcmmusa"
-              data-i18n="film.iframe-1"
-              src={
-                featurePlaying
-                  ? "https://www.youtube.com/embed/?listType=user_uploads&list=lcmmusa&autoplay=1"
-                  : undefined
-              }
-            ></iframe>
+            />
+          )}
+
+          {featuredVideo && videoEmbedUrl && !featurePlaying && (
             <button
               {...attrs(
                 "film.button-1",
                 "absolute inset-0 flex flex-col items-center justify-center film-section-1-box-2",
               )}
               type="button"
-              data-play-feature=""
-              data-i18n="film.button-1"
               onClick={() => setFeaturePlaying(true)}
-              hidden={featurePlaying}
             >
               <div className="w-20 h-20 rounded-full flex items-center justify-center mb-4 film-section-1-box-3">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  <polygon points="5 3 19 12 5 21 5 3" />
                 </svg>
               </div>
-              <p
-                {...attrs(
-                  "film.paragraph-3",
-                  "text-white font-semibold text-lg home-hero-section-1-label-1",
-                )}
-                data-i18n="film.paragraph-3"
-              >
+
+              <p className="text-white font-semibold text-lg">
                 {text("film.paragraph-3")}
               </p>
             </button>
+          )}
           </div>
         </div>
       </section>
