@@ -6,6 +6,7 @@ import Ministries from "@/pages/Ministries"
 import Testimonies from "@/pages/Testimonies"
 import Contact from "@/pages/Contact"
 import Media from "@/pages/Media"
+import Post from "@/pages/Post"
 
 function NotFound() {
   return (
@@ -24,6 +25,7 @@ const routes = [
     Component: Root,
     children: [
       { index: true, Component: Home },
+      { path: "posts/:slug", Component: Post },
       ...Object.entries({
         about: About,
         ministries: Ministries,

@@ -12,6 +12,10 @@
     "build:github": "node scripts/build-github.mjs"
   },
   "dependencies": {
+    "@portabletext/react": "^8.0.1",
+    "@sanity/client": "^8.6.2",
+    "@sanity/image-url": "^2.1.1",
+    "@tailwindcss/typography": "^0.5.20",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^8.4.0"

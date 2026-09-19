@@ -2,8 +2,13 @@ import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
+import { existsSync, readFileSync } from 'node:fs'
 
-import siteConfiguration from './.figma/make/site.json'
+// Some downloaded ZIPs omit Figma's configuration folder. Keep local builds usable.
+const siteConfigPath = new URL('./.figma/make/site.json', import.meta.url)
+const siteConfiguration = existsSync(siteConfigPath)
+  ? JSON.parse(readFileSync(siteConfigPath, 'utf8'))
+  : { title: 'LCMM', language: 'en', robots: { index: false } }
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {

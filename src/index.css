@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @import "./styles/layout.css";
 @import "./styles/phoenix.css";
+@plugin "@tailwindcss/typography";
 
 /* The Phoenix style sheets retain the approved design; new components can use Tailwind. */
 @theme inline {
@@ -14,3 +15,10 @@
   --color-border: var(--border);
 }
 [data-i18n="programs.paragraph-3"] { white-space: pre-line; }
+
+.cms-section { padding-block: 4rem; color: var(--foreground); background: var(--secondary); }
+.cms-card { padding: 1.5rem; border: 1px solid var(--border); border-radius: 0.75rem; background: var(--card); color: var(--card-foreground); }
+.cms-retry { margin-top: 1rem; padding: 0.5rem 1rem; border: 1px solid currentColor; border-radius: 0.25rem; }
+.cms-post { color: var(--foreground); overflow-wrap: anywhere; }
+[data-theme="dark"] :is(.cms-section, .cms-post) { --foreground: #e8f0fa; --secondary: #12283e; --card: #18324b; --card-foreground: #e8f0fa; --border: #36516b; --primary: #7eb3f7; }
+.cms-prose { --tw-prose-body: var(--foreground); --tw-prose-headings: var(--foreground); --tw-prose-links: var(--primary); --tw-prose-bold: var(--foreground); --tw-prose-counters: var(--foreground); --tw-prose-bullets: var(--foreground); --tw-prose-quotes: var(--foreground); --tw-prose-code: var(--foreground); --tw-prose-hr: var(--border); --tw-prose-quote-borders: var(--border); }

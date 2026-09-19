@@ -9,10 +9,11 @@ function SiteLayout() {
   const location = useLocation()
   const page = pageKey(location.pathname)
   const { text, title } = usePageCopy(page)
+  const isPost = location.pathname.startsWith("/posts/")
   useEffect(() => {
-    document.title = `${title} | LCMM`
+    document.title = `${isPost ? "Article / 文章" : title} | LCMM`
     document.body.dataset.page = page
-  }, [title, page])
+  }, [title, page, isPost])
   useEffect(() => {
     if (location.hash) {
       const timer = requestAnimationFrame(() =>
