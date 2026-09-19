@@ -33,6 +33,14 @@ export default function Home() {
     ? youtubeEmbedUrl(featuredVideo.youtubeUrl)
     : null
 
+  const videoId = videoEmbedUrl
+  ? new URL(videoEmbedUrl).pathname.split("/").pop()
+  : null
+
+  const videoThumbnail = videoId
+    ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
+    : null
+
   const videoSrc =
     featuredVideo && featurePlaying
       ? youtubeEmbedUrl(featuredVideo.youtubeUrl, true)
@@ -161,38 +169,44 @@ export default function Home() {
             </div>
           )}
 
-          {videoEmbedUrl && (
-            <iframe
-              {...attrs(
-                "film.iframe-1",
-                "absolute inset-0 w-full h-full film-section-1-iframe-1",
-              )}
-              src={videoSrc ?? undefined}
-              title={videoTitle}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-            />
-          )}
-
           {featuredVideo && videoEmbedUrl && !featurePlaying && (
             <button
-              {...attrs(
-                "film.button-1",
-                "absolute inset-0 flex flex-col items-center justify-center film-section-1-box-2",
-              )}
               type="button"
+              className="absolute inset-0 w-full h-full overflow-hidden"
               onClick={() => setFeaturePlaying(true)}
+              aria-label={label(
+                `Play ${videoTitle}`,
+                `播放 ${videoTitle}`,
+              )}
             >
-              <div className="w-20 h-20 rounded-full flex items-center justify-center mb-4 film-section-1-box-3">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-                  <polygon points="5 3 19 12 5 21 5 3" />
-                </svg>
-              </div>
+              {videoThumbnail && (
+                <img
+                  src={videoThumbnail}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              )}
 
-              <p className="text-white font-semibold text-lg">
-                {text("film.paragraph-3")}
-              </p>
+              {/* Darken the thumbnail slightly so the text is readable. */}
+              <div className="absolute inset-0 bg-black/35" />
+
+              <div className="relative z-10 flex h-full flex-col items-center justify-center gap-4 px-6">
+                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-black/60">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    aria-hidden="true"
+                  >
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                </div>
+
+                <p className="max-w-2xl text-center text-lg font-semibold text-white md:text-2xl">
+                  {videoTitle}
+                </p>
+              </div>
             </button>
           )}
           </div>
