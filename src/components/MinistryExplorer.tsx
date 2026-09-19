@@ -143,6 +143,7 @@ export default function MinistryExplorer({
 
       <section
         id="ministry-details"
+        tabIndex={-1}
         className="scroll-mt-28 py-12"
       >
         <div className="mx-auto max-w-6xl px-6">
@@ -262,6 +263,27 @@ export default function MinistryExplorer({
           </p>
         </div>
       </section>
+      <button
+        type="button"
+        onClick={() => {
+          const target = document.getElementById("ministry-details")
+          if (!target) return
+
+          const reduceMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)",
+          ).matches
+
+          target.focus({ preventScroll: true })
+          target.scrollIntoView({
+            behavior: reduceMotion ? "instant" : "smooth",
+            block: "start",
+          })
+        }}
+        className="fixed bottom-6 right-6 z-40 rounded-full bg-teal-800 px-5 py-3 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-teal-900 focus-visible:outline-2 focus-visible:outline-offset-4"
+      >
+        {label("Back to tabs ↑", "回到分類頁籤 ↑")}
+      </button>
     </>
-  )
+  
+)
 }

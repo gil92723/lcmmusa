@@ -137,7 +137,7 @@ export default function HealthMinistry() {
               key={entry._id}
               className="programs-section-1-box-1 overflow-hidden rounded-2xl"
             >
-              {posterUrl && (
+              {isEvent && posterUrl && (
                 <a
                   href={posterUrl}
                   target="_blank"
@@ -160,6 +160,35 @@ export default function HealthMinistry() {
               )}
 
               <div className="space-y-4 p-6">
+                {!isEvent && posterUrl && (
+                <details className="rounded-lg border border-current/20 p-3">
+                    <summary className="cursor-pointer font-semibold home-hero-section-1-text-1">
+                    {label("View poster", "查看海報")}
+                    </summary>
+
+                    <a
+                    href={posterUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 block"
+                    aria-label={label(
+                        `Open full-size poster: ${title}`,
+                        `開啟完整海報：${title}`,
+                    )}
+                    >
+                    <img
+                        src={posterUrl}
+                        alt={label(`Poster for ${title}`, `${title}海報`)}
+                        loading="lazy"
+                        className="mx-auto max-h-72 w-auto max-w-full rounded-lg object-contain"
+                    />
+
+                    <span className="mt-3 block text-center text-sm underline">
+                        {label("Open full-size poster ↗", "查看完整海報 ↗")}
+                    </span>
+                    </a>
+                </details>
+                )}
                 <h4 className="text-xl font-bold home-hero-section-1-title-1">
                   {title}
                 </h4>

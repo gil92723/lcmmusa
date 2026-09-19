@@ -214,7 +214,20 @@ export default function MissionaryCare() {
       </div>
     )
   }
+  function jumpToSection(id: string) {
+    const target = document.getElementById(id)
+    if (!target) return
 
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches
+
+    target.focus({ preventScroll: true })
+    target.scrollIntoView({
+      behavior: reduceMotion ? "instant" : "smooth",
+      block: "start",
+    })
+  }
   return (
     <div className="mx-auto max-w-6xl space-y-12 px-6">
       {/* Introduction */}
@@ -239,7 +252,26 @@ export default function MissionaryCare() {
           </p>
         </div>
       </header>
+      <nav
+        aria-label={label("Missionary Care sections", "宣教士關懷內容")}
+        className="flex flex-wrap gap-3"
+      >
+        <button
+          type="button"
+          onClick={() => jumpToSection("retired-missionaries")}
+          className="rounded-full border border-current/25 px-5 py-3 font-semibold transition-colors hover:bg-teal-500/10"
+        >
+          {label("Retired Missionaries ↓", "退休宣教士 ↓")}
+        </button>
 
+        <button
+          type="button"
+          onClick={() => jumpToSection("current-missions")}
+          className="rounded-full border border-current/25 px-5 py-3 font-semibold transition-colors hover:bg-teal-500/10"
+        >
+          {label("Current Missions ↓", "現役宣教事工 ↓")}
+        </button>
+      </nav>
       {loading && (
         <p role="status">{label("Loading…", "載入中……")}</p>
       )}
@@ -394,6 +426,7 @@ export default function MissionaryCare() {
       <section aria-labelledby="retired-missionaries-heading">
         <h3
           id="retired-missionaries-heading"
+          tabIndex={-1}
           className="mb-6 text-2xl font-bold home-hero-section-1-title-1"
         >
           {label("Retired Medical Missionaries", "退休醫護宣教士")}
@@ -402,7 +435,12 @@ export default function MissionaryCare() {
         {data && !loading && !error &&
           renderMissionaries(data.retired)}
       </section>
-
+        
+      <div
+        id="current-missions"
+        tabIndex={-1}
+        className="scroll-mt-28"
+      > 
       {/* Current missions video */}
       {data?.currentVideo && (
         <section aria-labelledby="current-missions-video-heading">
@@ -416,6 +454,7 @@ export default function MissionaryCare() {
           {renderVideo(data.currentVideo)}
         </section>
       )}
+      </div>
 
       {/* Currently supported missionaries */}
       <section aria-labelledby="current-missionaries-heading">
