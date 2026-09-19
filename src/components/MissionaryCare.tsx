@@ -179,7 +179,7 @@ export default function MissionaryCare() {
                 </div>
               )}
 
-              <div className="min-w-0 flex-1 space-y-4 p-6">
+              <div className="space-y-4 p-6">
                 <h4 className="text-xl font-bold home-hero-section-1-title-1">
                   {name}
                 </h4>
@@ -425,7 +425,12 @@ export default function MissionaryCare() {
       </section>
 
       {/* Retired missionaries */}
-      <section aria-labelledby="retired-missionaries-heading">
+      <section
+        id="retired-missionaries"
+        tabIndex={-1}
+        aria-labelledby="retired-missionaries-heading"
+        className="scroll-mt-28"
+      >
         <h3
           id="retired-missionaries-heading"
           tabIndex={-1}
