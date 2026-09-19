@@ -1,0 +1,4577 @@
+/* LCMM bilingual text. Match each key to data-i18n in the HTML.
+   Edit text.en / text.zh for wording; attributes for labels and placeholders.
+   The classes entries preserve the original language-specific fonts. */
+window.LCMM_TRANSLATIONS = {
+  index: {
+    title: {
+      en: "Home",
+      zh: "首頁",
+    },
+    entries: {
+      "page.link-1": {
+        text: {
+          en: "Skip to content",
+          zh: "跳至主要內容",
+        },
+      },
+      "header.link-1": {
+        attributes: {
+          "aria-label": {
+            en: "Luke Christian Medical Mission",
+            zh: "北美路加醫療傳道會",
+          },
+        },
+      },
+      "header.link-2": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-3": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-4": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-5": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-6": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-7": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-8.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-9": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "header.link-10": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-11.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-12": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-13": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-14": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-15": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-16": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-17": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "home-hero.paragraph-1": {
+        text: {
+          en: "Healing · Serving · Proclaiming",
+          zh: "醫治 · 服事 · 傳揚",
+        },
+      },
+      "home-hero.title-1": {
+        text: {
+          en: "Healing the Nations in His Name.",
+          zh: "醫治萬民， 傳揚福音。",
+        },
+      },
+      "home-hero.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "We are a group of Christian healthcare professionals with a calling for medical missions, partnering with non-medical coworkers, churches, and other mission organizations in team ministry. We use our medical expertise to care for society and serve our communities — going where God sends us to serve Him and His people, and to proclaim the saving Gospel of Jesus Christ.",
+          zh: "我們是一群對醫療傳道有負擔的基督徒醫護人員，配搭多位非醫療專業的同工，與教會及其他宣教機構做團隊的事奉。用醫療的專業關懷社會，服務社區，在神差遣我們去的地方，服事上帝和祂的子民，宣揚耶穌基督救人的福音。",
+        },
+      },
+      "home-hero.link-1": {
+        text: {
+          en: "Explore Our Ministries",
+          zh: "了解我們的事工",
+        },
+      },
+      "home-hero.link-2": {
+        text: {
+          en: "Support Us",
+          zh: "立即奉獻",
+        },
+      },
+      "home-hero.div-1": {
+        attributes: {
+          "aria-label": {
+            en: "Ministry photos",
+            zh: "事工照片",
+          },
+        },
+      },
+      "home-hero.image-1": {
+        attributes: {
+          alt: {
+            en: "Medical Ministry",
+            zh: "醫療事工",
+          },
+        },
+      },
+      "home-hero.label-1": {
+        classes: {
+          en: ["home-hero-section-1-label-1"],
+          zh: ["home-hero-section-1-label-2"],
+        },
+        text: {
+          en: "Medical Ministry",
+          zh: "醫療事工",
+        },
+      },
+      "home-hero.image-2": {
+        attributes: {
+          alt: {
+            en: "Community Care",
+            zh: "社區關懷",
+          },
+        },
+      },
+      "home-hero.label-2": {
+        classes: {
+          en: ["home-hero-section-1-label-1"],
+          zh: ["home-hero-section-1-label-2"],
+        },
+        text: {
+          en: "Community Care",
+          zh: "社區關懷",
+        },
+      },
+      "home-hero.image-3": {
+        attributes: {
+          alt: {
+            en: "Worship & Prayer",
+            zh: "敬拜禱告",
+          },
+        },
+      },
+      "home-hero.label-3": {
+        classes: {
+          en: ["home-hero-section-1-label-1"],
+          zh: ["home-hero-section-1-label-2"],
+        },
+        text: {
+          en: "Worship & Prayer",
+          zh: "敬拜禱告",
+        },
+      },
+      "home-hero.image-4": {
+        attributes: {
+          alt: {
+            en: "Mission Teams",
+            zh: "宣教團隊",
+          },
+        },
+      },
+      "home-hero.label-4": {
+        classes: {
+          en: ["home-hero-section-1-label-1"],
+          zh: ["home-hero-section-1-label-2"],
+        },
+        text: {
+          en: "Mission Teams",
+          zh: "宣教團隊",
+        },
+      },
+      "home-hero.image-5": {
+        attributes: {
+          alt: {
+            en: "Team Training",
+            zh: "同工培訓",
+          },
+        },
+      },
+      "home-hero.label-5": {
+        classes: {
+          en: ["home-hero-section-1-label-1"],
+          zh: ["home-hero-section-1-label-2"],
+        },
+        text: {
+          en: "Team Training",
+          zh: "同工培訓",
+        },
+      },
+      "home-hero.image-6": {
+        attributes: {
+          alt: {
+            en: "Overseas Missions",
+            zh: "海外宣教",
+          },
+        },
+      },
+      "home-hero.label-6": {
+        classes: {
+          en: ["home-hero-section-1-label-1"],
+          zh: ["home-hero-section-1-label-2"],
+        },
+        text: {
+          en: "Overseas Missions",
+          zh: "海外宣教",
+        },
+      },
+      "home-hero.button-1": {
+        text: {
+          en: "Pause slideshow",
+          zh: "暫停輪播",
+        },
+      },
+      "film.paragraph-1": {
+        text: {
+          en: "Our Story",
+          zh: "影片介紹",
+        },
+      },
+      "film.heading-1": {
+        text: {
+          en: "Meet LCMM Ministries",
+          zh: "認識 LCMM 事工",
+        },
+      },
+      "film.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Watch this short film to see how LCMM uses medical ministry to share God's love across the world.",
+          zh: "透過這部短片，認識我們如何以醫療事工在世界各地傳揚主愛。",
+        },
+      },
+      "film.iframe-1": {
+        attributes: {
+          title: {
+            en: "LCMM Ministries Short Film",
+            zh: "LCMM 事工短片",
+          },
+        },
+      },
+      "film.button-1": {
+        attributes: {
+          "aria-label": {
+            en: "Play LCMM film",
+            zh: "播放 LCMM 影片",
+          },
+        },
+      },
+      "film.paragraph-3": {
+        text: {
+          en: "Click to Play",
+          zh: "點擊播放",
+        },
+      },
+      "programs.heading-1": {
+        text: {
+          en: "Our Ministries",
+          zh: "我們的事工項目",
+        },
+      },
+      "programs.paragraph-1": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "From health talks to overseas short-term missions, God's love reaches the nations through medical ministry.",
+          zh: "從社區健康講座到海外短宣，主的愛藉醫療事工廣傳各地。",
+        },
+      },
+      "programs.link-1": {
+        text: {
+          en: "View All Ministries →",
+          zh: "查看全部事工 →",
+        },
+      },
+      "programs.subheading-1": {
+        text: {
+          en: "Health Talk & Bioethics Conference",
+          zh: "社區健康醫療及生命倫理講座",
+        },
+      },
+      "programs.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Regular community health seminars and bioethics conferences — applying medical expertise to serve the community and exploring life ethics from a faith perspective.",
+          zh: "定期舉辦健康講座與生命倫理研討會（Health Talk and Bioethics Conference），以醫療專業服務社區，並從信仰角度探討生命倫理議題。",
+        },
+      },
+      "programs.subheading-2": {
+        text: {
+          en: "Missionary Care Ministry",
+          zh: "關懷宣教士事工",
+        },
+      },
+      "programs.paragraph-3": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "A. Care for Retired Medical Missionaries — walking alongside retired healthcare missionaries in gratitude for their lifelong dedication. <br>B. Care for Active Medical Missionaries — providing spiritual, emotional, and practical support for those still serving on the field.",
+          zh: "A. 關懷退休醫護宣教士事工——陪伴並支持已退休的醫護宣教士，感謝他們一生的委身。<br> B. 關懷現役醫護宣教士事工——為仍在工場上服事的醫護宣教士提供靈性、情感及物質上的支援。",
+        },
+      },
+      "programs.subheading-3": {
+        text: {
+          en: "Next Gen Training · MSCE & English Ministry",
+          zh: "LCMM 第二代培育 · 醫護學生文化交流營",
+        },
+      },
+      "programs.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "The Medical Students Cultural Exchange Program (MSCE) and English Ministry nurture the next generation of Christian healthcare professionals through cross-cultural exchange between Taiwan and North America.",
+          zh: "台美醫護學生文化交流營（MSCE）及英文事工，培育下一代基督徒醫護人員，透過跨文化交流裝備年輕人投身醫療宣教。",
+        },
+      },
+      "testimonies-preview.paragraph-1": {
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "testimonies-preview.heading-1": {
+        text: {
+          en: "Stories of Faith",
+          zh: "生命故事",
+        },
+      },
+      "testimonies-preview.link-1": {
+        text: {
+          en: "View All Testimonies →",
+          zh: "查看所有見證 →",
+        },
+      },
+      "testimonies-preview.paragraph-2": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"Walking through the valley of the shadow of death, I came to understand God\'s presence and the meaning of medical ministry far more deeply."',
+          zh: "「走過死蔭的幽谷，我更深地體會到神的同在與醫療事工的意義。」",
+        },
+      },
+      "testimonies-preview.image-1": {
+        attributes: {
+          alt: {
+            en: "Dr. Li-Yuan Shih",
+            zh: "施麗媛醫師",
+          },
+        },
+      },
+      "testimonies-preview.paragraph-3": {
+        text: {
+          en: "Dr. Li-Yuan Shih",
+          zh: "施麗媛醫師",
+        },
+      },
+      "testimonies-preview.paragraph-4": {
+        text: {
+          en: "Physician",
+          zh: "醫師",
+        },
+      },
+      "testimonies-preview.paragraph-5": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"After my liver transplant, every single day is a free gift from God. I want to spend the rest of my life glorifying His name."',
+          zh: "「換肝之後，每一天對我來說都是神白白的恩賜，我願用餘生榮耀祂的名。」",
+        },
+      },
+      "testimonies-preview.image-2": {
+        attributes: {
+          alt: {
+            en: "Hsu-Chu Lin",
+            zh: "林旭珠",
+          },
+        },
+      },
+      "testimonies-preview.paragraph-6": {
+        text: {
+          en: "Hsu-Chu Lin",
+          zh: "林旭珠",
+        },
+      },
+      "testimonies-preview.paragraph-7": {
+        text: {
+          en: "Testimony · Compiled by Chun-Hui Cheng",
+          zh: "見證者 · 整理：鄭純慧",
+        },
+      },
+      "testimonies-preview.paragraph-8": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"Even in the storm, the brothers and sisters of Nan-San village stood firm — a living testament to the power of faith and God\'s presence."',
+          zh: "「暴風中，南三村的弟兄姐妹仍然堅立，這是信仰的力量，也是神同在的明證。」",
+        },
+      },
+      "testimonies-preview.image-3": {
+        attributes: {
+          alt: {
+            en: "Standing Firm in the Storm — Nan-San Village",
+            zh: "暴風中仍然堅立的南三村",
+          },
+        },
+      },
+      "testimonies-preview.paragraph-9": {
+        text: {
+          en: "Standing Firm in the Storm — Nan-San Village",
+          zh: "暴風中仍然堅立的南三村",
+        },
+      },
+      "testimonies-preview.paragraph-10": {
+        text: {
+          en: "Field Testimony",
+          zh: "工場見證",
+        },
+      },
+      "community.paragraph-1": {
+        text: {
+          en: "Community Board",
+          zh: "社群佈告欄",
+        },
+      },
+      "community.heading-1": {
+        text: {
+          en: "Updates & Announcements",
+          zh: "最新消息與更新",
+        },
+      },
+      "community.paragraph-2": {
+        text: {
+          en: "Board demo: new posts and likes stay on this page only; they are not published.",
+          zh: "佈告欄示範：新增內容與按讚僅保留於目前頁面，不會公開發佈。",
+        },
+      },
+      "community.button-1": {
+        text: {
+          en: "+ Post Update",
+          zh: "+ 發佈訊息",
+        },
+      },
+      "community.paragraph-3": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Share an Update",
+          zh: "分享更新",
+        },
+      },
+      "community.input-1": {
+        classes: {
+          en: ["programs-section-1-input-1"],
+          zh: ["programs-section-1-input-2"],
+        },
+        attributes: {
+          placeholder: {
+            en: "Title",
+            zh: "標題",
+          },
+          "aria-label": {
+            en: "Title",
+            zh: "標題",
+          },
+        },
+      },
+      "community.textarea-1": {
+        classes: {
+          en: ["programs-section-1-input-1"],
+          zh: ["programs-section-1-input-2"],
+        },
+        attributes: {
+          placeholder: {
+            en: "Your message...",
+            zh: "內容...",
+          },
+          "aria-label": {
+            en: "Message",
+            zh: "內容",
+          },
+        },
+      },
+      "community.button-2": {
+        text: {
+          en: "Cancel",
+          zh: "取消",
+        },
+      },
+      "community.button-3": {
+        text: {
+          en: "Post",
+          zh: "發佈",
+        },
+      },
+      "community.paragraph-4": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "community.paragraph-5": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+      },
+      "community.button-4": {
+        attributes: {
+          "aria-label": {
+            en: "Like this update",
+            zh: "喜歡這則訊息",
+          },
+        },
+      },
+      "community.paragraph-6": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "community.paragraph-7": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+      },
+      "community.button-5": {
+        attributes: {
+          "aria-label": {
+            en: "Like this update",
+            zh: "喜歡這則訊息",
+          },
+        },
+      },
+      "community.paragraph-8": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "community.paragraph-9": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+      },
+      "community.button-6": {
+        attributes: {
+          "aria-label": {
+            en: "Like this update",
+            zh: "喜歡這則訊息",
+          },
+        },
+      },
+      "community.paragraph-10": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "community.paragraph-11": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+      },
+      "community.button-7": {
+        attributes: {
+          "aria-label": {
+            en: "Like this update",
+            zh: "喜歡這則訊息",
+          },
+        },
+      },
+      "missions.paragraph-1": {
+        text: {
+          en: "Currently Supporting",
+          zh: "現正支援",
+        },
+      },
+      "missions.heading-1": {
+        text: {
+          en: "Active Mission Fields",
+          zh: "活躍宣教事工",
+        },
+      },
+      "missions.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Your giving directly funds these ongoing mission efforts.",
+          zh: "您的奉獻直接支持這些正在進行中的工場。",
+        },
+      },
+      "missions.link-1": {
+        text: {
+          en: "Support Now",
+          zh: "立即奉獻",
+        },
+      },
+      "missions.paragraph-3": {
+        text: {
+          en: "Bangladesh",
+          zh: "孟加拉",
+        },
+      },
+      "missions.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Rural Medical Clinic",
+          zh: "鄉村醫療診所",
+        },
+      },
+      "missions.label-1": {
+        text: {
+          en: "● Active",
+          zh: "● 進行中",
+        },
+      },
+      "missions.paragraph-5": {
+        text: {
+          en: "Namibia",
+          zh: "納米比亞",
+        },
+      },
+      "missions.paragraph-6": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Community Health Education",
+          zh: "社區衛生教育",
+        },
+      },
+      "missions.label-2": {
+        text: {
+          en: "● Active",
+          zh: "● 進行中",
+        },
+      },
+      "missions.paragraph-7": {
+        text: {
+          en: "Taitung, Taiwan",
+          zh: "台灣台東",
+        },
+      },
+      "missions.paragraph-8": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Tribal Starlight Project",
+          zh: "部落星光計劃",
+        },
+      },
+      "missions.label-3": {
+        text: {
+          en: "● Active",
+          zh: "● 進行中",
+        },
+      },
+      "missions.paragraph-9": {
+        text: {
+          en: "Thai-Myanmar Border",
+          zh: "泰緬邊界",
+        },
+      },
+      "missions.paragraph-10": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Huai River Medical Services",
+          zh: "小桂河醫療服務",
+        },
+      },
+      "missions.label-4": {
+        text: {
+          en: "● Active",
+          zh: "● 進行中",
+        },
+      },
+      "get-involved.heading-1": {
+        text: {
+          en: "Your support transforms lives.",
+          zh: "您的支持，改變無數生命。",
+        },
+      },
+      "get-involved.paragraph-1": {
+        classes: {
+          en: ["get-involved-section-1-text-1"],
+          zh: ["get-involved-section-1-text-2"],
+        },
+        text: {
+          en: "Every donation goes directly to medical missions and community programs, helping more families in need.",
+          zh: "您的每一份奉獻都將直接用於醫療傳道及社區服務，幫助更多有需要的家庭。",
+        },
+      },
+      "get-involved.link-1": {
+        text: {
+          en: "Donate Now",
+          zh: "立即奉獻",
+        },
+      },
+      "get-involved.link-2": {
+        text: {
+          en: "Become a Volunteer",
+          zh: "成為志工",
+        },
+      },
+      "footer.paragraph-1": {
+        classes: {
+          en: ["footer-text-1"],
+          zh: ["footer-text-4"],
+        },
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑，傳揚基督大愛。",
+        },
+      },
+      "footer.paragraph-2": {
+        text: {
+          en: "Contact",
+          zh: "聯絡資訊",
+        },
+      },
+      "footer.paragraph-3": {
+        text: {
+          en: "Links",
+          zh: "連結",
+        },
+      },
+      "footer.link-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-2.text": {
+        text: {
+          en: "Leave Us a Message",
+          zh: "留下訊息",
+        },
+      },
+      "footer.link-3": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-4.text": {
+        text: {
+          en: "Subscribe to Our Newsletter",
+          zh: "訂閱電子報",
+        },
+      },
+      "footer.link-5": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-6.text": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "footer.link-7": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-8.text": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "footer.paragraph-4": {
+        classes: {
+          en: ["footer-text-3"],
+          zh: ["footer-text-5"],
+        },
+      },
+    },
+  },
+  about: {
+    title: {
+      en: "About Us",
+      zh: "關於我們",
+    },
+    entries: {
+      "page.link-1": {
+        text: {
+          en: "Skip to content",
+          zh: "跳至主要內容",
+        },
+      },
+      "header.link-1": {
+        attributes: {
+          "aria-label": {
+            en: "Luke Christian Medical Mission",
+            zh: "北美路加醫療傳道會",
+          },
+        },
+      },
+      "header.link-2": {
+        classes: {
+          en: ["nav-link-8"],
+          zh: ["nav-link-9"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-3": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-4": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-5": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-6": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-7": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-8.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-9": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "header.link-10": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-11.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-12": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-13": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-14": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-15": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-16": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-17": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "about-hero.paragraph-1": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "about-hero.title-1": {
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑， 傳揚基督大愛。",
+        },
+      },
+      "about-hero.paragraph-2": {
+        classes: {
+          en: ["about-hero-section-1-text-2"],
+          zh: ["about-hero-section-1-text-3"],
+        },
+        text: {
+          en: "We are a group of Christian healthcare professionals with a calling for medical missions, partnering with non-medical coworkers, churches, and other mission organizations in team ministry. We use our medical expertise to care for society and serve our communities — going where God sends us to serve Him and His people, and to proclaim the saving Gospel of Jesus Christ.",
+          zh: "我們是一群對醫療傳道有負擔的基督徒醫護人員，配搭多位非醫療專業的同工，與教會及其他宣教機構做團隊的事奉。用醫療的專業關懷社會，服務社區，在神差遣我們去的地方，服事上帝和祂的子民，宣揚耶穌基督救人的福音。",
+        },
+      },
+      "mission-vision.paragraph-1": {
+        text: {
+          en: "Mission",
+          zh: "使命",
+        },
+      },
+      "mission-vision.heading-1": {
+        text: {
+          en: "Our Mission",
+          zh: "我們的使命",
+        },
+      },
+      "mission-vision.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "We are a group of Christian healthcare professionals with a calling for medical missions, partnering with non-medical coworkers, churches, and other mission organizations in team ministry. We use our medical expertise to care for society and serve our communities — going where God sends us to serve Him and His people, and to proclaim the saving Gospel of Jesus Christ.",
+          zh: "我們是一群對醫療傳道有負擔的基督徒醫護人員，配搭多位非醫療專業的同工，與教會及其他宣教機構做團隊的事奉。用醫療的專業關懷社會，服務社區，在神差遣我們去的地方，服事上帝和祂的子民，宣揚耶穌基督救人的福音。",
+        },
+      },
+      "mission-vision.paragraph-3": {
+        text: {
+          en: "Years of Ministry",
+          zh: "年事奉歷史",
+        },
+      },
+      "mission-vision.paragraph-4": {
+        text: {
+          en: "Active Mission Fields",
+          zh: "活躍宣教工場",
+        },
+      },
+      "mission-vision.paragraph-5": {
+        text: {
+          en: "MSCE Annual Trips",
+          zh: "屆 MSCE 交流營",
+        },
+      },
+      "mission-vision.paragraph-6": {
+        text: {
+          en: "North American Chapters",
+          zh: "北美分會",
+        },
+      },
+      "mission-vision.paragraph-7": {
+        text: {
+          en: "Vision",
+          zh: "異象",
+        },
+      },
+      "mission-vision.heading-2": {
+        text: {
+          en: "Our Vision",
+          zh: "我們的異象",
+        },
+      },
+      "mission-vision.paragraph-8": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Inspire more Christians and churches to participate in medical missions",
+          zh: "喚起更多基督徒及教會參與醫療傳道的事工",
+        },
+      },
+      "mission-vision.paragraph-9": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Actively care for social and medical needs, serving marginalized communities",
+          zh: "積極關懷社會醫療問題，服務弱勢族群",
+        },
+      },
+      "mission-vision.paragraph-10": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Raise up cross-cultural medical missionary work",
+          zh: "興起跨文化的醫療宣教事工",
+        },
+      },
+      "mission-vision.paragraph-11": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Build more fruitful partnerships with churches and evangelical organizations",
+          zh: "和教會及其他福音機構有更多有果效的配搭",
+        },
+      },
+      "mission-vision.paragraph-12": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Pass the baton — invest in the next generation",
+          zh: "交棒與傳承",
+        },
+      },
+      "history.paragraph-1": {
+        text: {
+          en: "History",
+          zh: "歷史",
+        },
+      },
+      "history.heading-1": {
+        text: {
+          en: "Our History",
+          zh: "歷史沿革",
+        },
+      },
+      "history.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Luke Christian Medical Mission was founded in the Greater Los Angeles area, primarily by Christian healthcare professionals from Taiwan, with a vision to share God's love through medicine, serve marginalized communities, and proclaim the Gospel.",
+          zh: "北美路加醫療傳道會於大洛杉磯地區成立，成員大多來自台灣的基督徒醫護人士，目的是結合對醫療宣教有負擔的弟兄姊妹，藉由醫療相關的活動傳遞上帝的愛、服務弱勢族群、傳揚福音。",
+        },
+      },
+      "history.paragraph-3": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "A Northern California chapter was established in the San Francisco Bay Area, extending ministry to the Bay Area, Taiwan, and new overseas fields.",
+          zh: "於舊金山灣區成立北加州分會，將事工版圖延伸至北加州，在灣區、台灣和海外積極發展新事工。",
+        },
+      },
+      "history.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "A new board was formed, welcoming non-medical professionals into ministry. The Medical Students Cultural Exchange Program (MSCE) was launched to nurture the next generation of medical missionaries.",
+          zh: "組織新的董事會，歡迎非醫療專業的同工加入服事，並創辦台美醫護學生文化交流營（MSCE），培育下一代醫療宣教士。",
+        },
+      },
+      "history.paragraph-5": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "MSCE celebrated its 16th annual trip. LCMM continues to deepen next-generation discipleship and partnership with churches and mission-hearted brothers and sisters.",
+          zh: "MSCE 歡慶第十六屆，持續深化下一代培育與傳承事工，期待繼續和眾教會及有負擔的弟兄姐妹一起服事上帝和祂的子民。",
+        },
+      },
+      "invitation.paragraph-1": {
+        text: {
+          en: "Get Involved",
+          zh: "參與",
+        },
+      },
+      "invitation.heading-1": {
+        text: {
+          en: "We Invite You To",
+          zh: "我們邀請您",
+        },
+      },
+      "invitation.paragraph-2": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Become a Prayer Warrior for LCMM",
+          zh: "成為路加的代禱勇士",
+        },
+      },
+      "invitation.paragraph-3": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Serve as an LCMM coworker",
+          zh: "成為路加的同工",
+        },
+      },
+      "invitation.paragraph-4": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Join an LCMM short-term mission team",
+          zh: "參與路加短宣隊",
+        },
+      },
+      "invitation.paragraph-5": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Become a long-term LCMM missionary",
+          zh: "成為路加長期宣教士",
+        },
+      },
+      "invitation.paragraph-6": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Give to support LCMM's work",
+          zh: "成為路加奉獻的參與者",
+        },
+      },
+      "invitation.paragraph-7": {
+        text: {
+          en: "Help keep our office running, fund ministry programs, and ensure our missionaries have what they need",
+          zh: "使路加辦公室可正常運作、使各事工有足夠的費用來推展、使宣教士生活和事工的需要沒有匱乏",
+        },
+      },
+      "invitation.link-1": {
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "invitation.link-2": {
+        text: {
+          en: "Explore Ministries",
+          zh: "了解事工",
+        },
+      },
+      "leadership.paragraph-1": {
+        text: {
+          en: "Leadership",
+          zh: "領導團隊",
+        },
+      },
+      "leadership.heading-1": {
+        text: {
+          en: "Board of Directors",
+          zh: "北美路加董事會",
+        },
+      },
+      "leadership.paragraph-2": {
+        text: {
+          en: "Board Chair",
+          zh: "董事會主席",
+        },
+      },
+      "leadership.paragraph-3": {
+        text: {
+          en: "Directors",
+          zh: "董事",
+        },
+      },
+      "leadership.paragraph-4": {
+        text: {
+          en: "Executive Staff & Committees",
+          zh: "執行同工與委員會",
+        },
+      },
+      "leadership.paragraph-5": {
+        text: {
+          en: "CEO",
+          zh: "執行長 CEO",
+        },
+      },
+      "leadership.paragraph-6": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Dr. Paul Cheng",
+          zh: "鄭博仁醫師",
+        },
+      },
+      "leadership.paragraph-7": {
+        text: {
+          en: "Communication & IT Support",
+          zh: "通訊與資訊科技",
+        },
+      },
+      "leadership.paragraph-8": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "leadership.paragraph-9": {
+        text: {
+          en: "Overseas Missions Committee",
+          zh: "關懷宣教士及海外事工委員會",
+        },
+      },
+      "leadership.paragraph-10": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Lauren Li · Chiu Wu · Li-Li Hsiao · Diana Huang · Paul Cheng",
+          zh: "李樂 · 吳秋芳 · 蕭俐俐 · 楊寶容 · 鄭博仁",
+        },
+      },
+      "leadership.paragraph-11": {
+        text: {
+          en: "Finance Committee",
+          zh: "財務委員會",
+        },
+      },
+      "leadership.paragraph-12": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "footer.paragraph-1": {
+        classes: {
+          en: ["footer-text-1"],
+          zh: ["footer-text-4"],
+        },
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑，傳揚基督大愛。",
+        },
+      },
+      "footer.paragraph-2": {
+        text: {
+          en: "Contact",
+          zh: "聯絡資訊",
+        },
+      },
+      "footer.paragraph-3": {
+        text: {
+          en: "Links",
+          zh: "連結",
+        },
+      },
+      "footer.link-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-2.text": {
+        text: {
+          en: "Leave Us a Message",
+          zh: "留下訊息",
+        },
+      },
+      "footer.link-3": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-4.text": {
+        text: {
+          en: "Subscribe to Our Newsletter",
+          zh: "訂閱電子報",
+        },
+      },
+      "footer.link-5": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-6.text": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "footer.link-7": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-8.text": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "footer.paragraph-4": {
+        classes: {
+          en: ["footer-text-3"],
+          zh: ["footer-text-5"],
+        },
+      },
+    },
+  },
+  ministries: {
+    title: {
+      en: "Ministries",
+      zh: "事工項目",
+    },
+    entries: {
+      "page.link-1": {
+        text: {
+          en: "Skip to content",
+          zh: "跳至主要內容",
+        },
+      },
+      "header.link-1": {
+        attributes: {
+          "aria-label": {
+            en: "Luke Christian Medical Mission",
+            zh: "北美路加醫療傳道會",
+          },
+        },
+      },
+      "header.link-2": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-3": {
+        classes: {
+          en: ["nav-link-8"],
+          zh: ["nav-link-9"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-4": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-5": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-6": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-7": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-8.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-9": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "header.link-10": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-11.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-12": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-13": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-14": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-15": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-16": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-17": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "ministries-hero.paragraph-1": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "ministries-hero.title-1": {
+        text: {
+          en: "Our Ministries",
+          zh: "我們的事工項目",
+        },
+      },
+      "ministries-hero.paragraph-2": {
+        classes: {
+          en: ["about-hero-section-1-text-2"],
+          zh: ["about-hero-section-1-text-3"],
+        },
+        text: {
+          en: "From health talks to overseas short-term missions, God's love reaches the nations through medical ministry.",
+          zh: "從社區健康講座到海外短宣，主的愛藉醫療事工廣傳各地。",
+        },
+      },
+      "programs.subheading-1": {
+        text: {
+          en: "Health Talk & Bioethics Conference",
+          zh: "社區健康醫療及生命倫理講座",
+        },
+      },
+      "programs.paragraph-1": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Regular community health seminars and bioethics conferences — applying medical expertise to serve the community and exploring life ethics from a faith perspective.",
+          zh: "定期舉辦健康講座與生命倫理研討會（Health Talk and Bioethics Conference），以醫療專業服務社區，並從信仰角度探討生命倫理議題。",
+        },
+      },
+      "programs.subheading-2": {
+        text: {
+          en: "Missionary Care Ministry",
+          zh: "關懷宣教士事工",
+        },
+      },
+      "programs.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "A. Care for Retired Medical Missionaries — walking alongside retired healthcare missionaries in gratitude for their lifelong dedication. B. Care for Active Medical Missionaries — providing spiritual, emotional, and practical support for those still serving on the field.",
+          zh: "A. 關懷退休醫護宣教士事工——陪伴並支持已退休的醫護宣教士，感謝他們一生的委身。B. 關懷現役醫護宣教士事工——為仍在工場上服事的醫護宣教士提供靈性、情感及物質上的支援。",
+        },
+      },
+      "programs.subheading-3": {
+        text: {
+          en: "Next Gen Training · MSCE & English Ministry",
+          zh: "LCMM 第二代培育 · 醫護學生文化交流營",
+        },
+      },
+      "programs.paragraph-3": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "The Medical Students Cultural Exchange Program (MSCE) and English Ministry nurture the next generation of Christian healthcare professionals through cross-cultural exchange between Taiwan and North America.",
+          zh: "台美醫護學生文化交流營（MSCE）及英文事工，培育下一代基督徒醫護人員，透過跨文化交流裝備年輕人投身醫療宣教。",
+        },
+      },
+      "programs.subheading-4": {
+        text: {
+          en: "Overseas Missions",
+          zh: "海外事工",
+        },
+      },
+      "programs.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Partnering with mission organizations and active medical missionaries to send short-term teams, giving participants firsthand experience on the mission field. Fields served: Bangladesh, Namibia, Taiwan, Huai River (Thai-Myanmar border).",
+          zh: "與其他宣教機構及現役醫療宣教師合作，組短宣隊支援，讓參與者親身經歷宣教工場的挑戰，更佳裝備自己為神所用。服事地區：孟加拉、納米比亞、台灣、泰緬邊界小桂河。",
+        },
+      },
+      "programs.subheading-5": {
+        text: {
+          en: 'Taitung "Tribal Starlight" Project',
+          zh: "台東「部落星光」計劃",
+        },
+      },
+      "programs.paragraph-5": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "LCMM supports the Tribal Starlight Ministry of Jejalejale Foundation, a partner of Taitung Christian Hospital. Starlight Ambassadors live long-term in indigenous communities, carrying out a mission of life-transforming hope.",
+          zh: "北美路加支持東基督教醫院公益夥伴「家立立基金會」之部落星光事工，設立「部落星光據點」。星光大使長期入住部落，展開生命影響生命的幸福希望工程。",
+        },
+      },
+      "programs.subheading-6": {
+        text: {
+          en: "Other Ministries",
+          zh: "其他事工",
+        },
+      },
+      "programs.paragraph-6": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "1. Partnering with CCMM, TCMA, and Christian hospitals in Taiwan. 2. Supporting medical missionaries in Thailand, Myanmar, Africa, and Latin America. 3. Funding education for ethnic minority medical students in China. 4. Publishing The Calling newsletter.",
+          zh: "1. 與台灣路加傳道會（CCMM）、基督徒醫學會（TCMA）及各基督教醫院配搭推展醫療宣教。2. 支持泰國、緬甸、非洲及中南美洲醫療宣教士並組短宣隊。3. 支助中國少數民族醫學生的教育。4. 出版《The Calling》刊物，傳揚醫療宣教信息。",
+        },
+      },
+      "fields.paragraph-1": {
+        text: {
+          en: "Mission Fields",
+          zh: "工場介紹",
+        },
+      },
+      "fields.heading-1": {
+        text: {
+          en: "Active Mission Fields",
+          zh: "活躍宣教工場",
+        },
+      },
+      "fields.image-1": {
+        attributes: {
+          alt: {
+            en: "Bangladesh",
+            zh: "孟加拉",
+          },
+        },
+      },
+      "fields.subheading-1": {
+        text: {
+          en: "Bangladesh",
+          zh: "孟加拉",
+        },
+      },
+      "fields.paragraph-2": {
+        text: {
+          en: "Dhaka",
+          zh: "達卡",
+        },
+      },
+      "fields.paragraph-3": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "In June 2018, LCMM joined a Bangladesh mission trip organized by Alliance Theological Seminary, partnering with medical coworkers and students from North America, Taiwan, South Africa, and China to provide internal medicine, pediatrics, ophthalmology, and dental services. Working alongside local Taiwanese Christian businesspeople, we served over 600 people in two impoverished communities in Dhaka, proclaiming the Gospel through medicine and community service.",
+          zh: "2018年六月底，北美路加參加由美福神學院籌劃的孟加拉短宣，結合來自北美、台灣、南非和中國的醫療同工及學生，提供內兒科、眼科和牙科的服務。我們和當地的台商基督徒配搭，在首都達卡兩個貧窮的社區共服務了六百多人，藉著醫療和社區服務向弱勢族群宣揚上帝救世愛人的福音。",
+        },
+      },
+      "fields.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Starting July 2018, LCMM launched an ongoing ministry based at a primary school and church founded by Taiwanese Christian businesspeople — establishing a health room, maintaining health records, tracking children's growth, providing vitamins, and treating parasitic infections. Local partners reported that after the clinic began, school attendance improved, Sunday school participation increased, and adults who came for care began attending church.",
+          zh: "自2018年七月起，北美路加開始新的長期事工，以台商基督徒創建的小學及教會為基地，成立「保健室」，建立病歷、追蹤學童健康情況、定期量身高體重、補充維他命及給予驅蟲劑。當地同工反映，自從開始提供醫護服務後，學生們更勤奮來上課，課後參加主日學的學生也有增加，成年人也多因為來看病後開始參加教會聚會。",
+        },
+      },
+      "fields.paragraph-5": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "In June 2019, LCMM returned with Alliance Theological Seminary, Taiwan's Chinese Dental Service Group, and a Chinese team — 22 participants total — for a second joint mission.",
+          zh: "2019年六月底，北美路加再次配搭美福神學院、台灣中華牙醫服務團和中國團隊，共22人一起服侍學習宣教的功課。",
+        },
+      },
+      "fields.paragraph-6": {
+        text: {
+          en: "Served (first trip)",
+          zh: "服務人次（首次短宣）",
+        },
+      },
+      "fields.paragraph-7": {
+        text: {
+          en: "Partner countries",
+          zh: "參與國家",
+        },
+      },
+      "fields.paragraph-8": {
+        text: {
+          en: "Ministry launched",
+          zh: "事工開始年份",
+        },
+      },
+      "fields.image-2": {
+        attributes: {
+          alt: {
+            en: "Namibia",
+            zh: "納米比亞",
+          },
+        },
+      },
+      "fields.subheading-2": {
+        text: {
+          en: "Namibia",
+          zh: "納米比亞",
+        },
+      },
+      "fields.paragraph-9": {
+        text: {
+          en: "New Africa Ministry (2019)",
+          zh: "非洲新事工（2019）",
+        },
+      },
+      "fields.paragraph-10": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "In 2019, LCMM connected with Rev. Yukon Chen from Taiwan, who had established a church in Namibia caring for 400–500 children in a local slum community. LCMM partnered with Rev. Chen to begin a new Africa ministry.",
+          zh: "2019年，北美路加聯繫上來自台灣的陳玉昆牧師——他在納米比亞建立教會，關心、扶養貧民窟四、五百個孩子。北美路加決定配搭陳牧師開始非洲新事工。",
+        },
+      },
+      "fields.paragraph-11": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "LCMM plans to build two container homes next to Rev. Chen's church, providing shade and storage for children who come for meals, and establishing a long-term health room following the Bangladesh ministry model. Future plans include sending Christian medical teams for short-term missions.",
+          zh: "LCMM計劃資建兩個貨櫃屋在陳牧師創立的貧民窟教會旁，為前來吃飯的孩童提供遮蔭及儲放空間，並循LCMM孟加拉事工模式，在此設立長期「保健室」。日後北美路加將配搭其他基督徒醫療團，到此進行醫療短宣。",
+        },
+      },
+      "fields.paragraph-12": {
+        text: {
+          en: "400–500",
+          zh: "400-500",
+        },
+      },
+      "fields.paragraph-13": {
+        text: {
+          en: "Children in care",
+          zh: "關懷孩童",
+        },
+      },
+      "fields.paragraph-14": {
+        text: {
+          en: "Ministry launched",
+          zh: "事工開始年份",
+        },
+      },
+      "fields.paragraph-15": {
+        text: {
+          en: "Rev. Yukon Chen",
+          zh: "陳玉昆牧師",
+        },
+      },
+      "fields.paragraph-16": {
+        text: {
+          en: "Key partner",
+          zh: "合作夥伴",
+        },
+      },
+      "fields.image-3": {
+        attributes: {
+          alt: {
+            en: "Taiwan",
+            zh: "台灣",
+          },
+        },
+      },
+      "fields.subheading-3": {
+        text: {
+          en: "Taiwan",
+          zh: "台灣",
+        },
+      },
+      "fields.paragraph-17": {
+        text: {
+          en: "Hengchun, Taitung, Mackay",
+          zh: "恆春、台東、馬偕醫學院",
+        },
+      },
+      "fields.paragraph-18": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "As Taiwan's healthcare system has advanced, LCMM's Taiwan ministry focuses on partnering with Christian hospitals and mission organizations — exchanging medical knowledge, participating in evangelism, and supporting community programs.",
+          zh: "由於台灣醫療制度的進步，LCMM在台灣的事工轉型為與基督教醫院及宣教機構合作，交換醫學新知、參與福音工作、協助社區事工。",
+        },
+      },
+      "fields.paragraph-19": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "[Alcohol Intolerance Education] LCMM coworker Dr. James Chen founded Taiwan's Alcohol Intolerance Health Education Association, establishing May 9 as \"No Alcohol (59) Day\" to raise awareness of alcohol intolerance (affecting ~47% of Taiwan's population). LCMM co-organized oral cancer screening camps at Chiayi Christian Hospital, Hengchun Christian Hospital, and National Yang-Ming University. MSCE now partners with this initiative for ongoing community health work in Hengchun.",
+          zh: "【酒精不耐症衛教】北美路加同工陳哲宏博士創建台灣酒精不耐症衛教協會，推動每年5月9日為「無酒（59）日」，並協辦多場口腔癌檢查訓練營（嘉義基督教醫院、恆春基督教醫院、陽明大學公衛學院）。MSCE亦配搭協會在恆春基督教醫院進行社區健康服務，成為LCMM在台長期據點。",
+        },
+      },
+      "fields.paragraph-20": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "[Mackay Medical College Taiwan-US Club] In 2017, LCMM used MSCE alumni to found a Taiwan-US student club at Mackay Medical College — now one of the school's most popular clubs — sharing the Gospel through events, lectures, and long-term relationships.",
+          zh: "【馬偕醫學院台美社】2017年以參加過MSCE的學生為基礎，在馬偕醫學院成立「台美社」，透過演講、活動及長期關懷，讓學生對基督信仰有更深認識，打開福音大門。「台美社」目前已成為院內熱門社團。",
+        },
+      },
+      "fields.paragraph-21": {
+        text: {
+          en: "16",
+          zh: "16屆",
+        },
+      },
+      "fields.paragraph-22": {
+        text: {
+          en: "MSCE trips",
+          zh: "MSCE 屆數",
+        },
+      },
+      "fields.paragraph-23": {
+        text: {
+          en: "Partner hospitals",
+          zh: "合作醫院",
+        },
+      },
+      "fields.paragraph-24": {
+        text: {
+          en: "Taiwan-US Club founded",
+          zh: "台美社成立年份",
+        },
+      },
+      "fields.image-4": {
+        attributes: {
+          alt: {
+            en: "Thai-Myanmar Border",
+            zh: "泰緬邊界小桂河",
+          },
+        },
+      },
+      "fields.subheading-4": {
+        text: {
+          en: "Thai-Myanmar Border",
+          zh: "泰緬邊界小桂河",
+        },
+      },
+      "fields.paragraph-25": {
+        text: {
+          en: "Huai River — Ethnic Minorities & Refugees",
+          zh: "少數民族及難民",
+        },
+      },
+      "fields.paragraph-26": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "The Huai River area on the Thai-Myanmar border is remote and severely underserved. Many impoverished ethnic minority peoples and Myanmar refugees live there — though refugee camps exist nearby, medical needs remain acute.",
+          zh: "泰緬邊界的小桂河地區地處偏遠，醫療資源缺乏。當地有很多貧苦的少數民族及緬甸難民，附近雖有難民營，仍非常需要醫療的協助。",
+        },
+      },
+      "fields.paragraph-27": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "In 2012, at an LCMM retreat, Dr. Jui-Heng Weng shared the needs of the Huai River region. Moved by the Spirit, LCMM joined hands with CCMM Taiwan and the Grace Foundation to begin serving this community, providing ongoing medical care for ethnic minorities and refugees.",
+          zh: "2012年北美路加退修會中，翁瑞亨醫師分享小桂河地區的需要，北美路加與台灣路加及恩典基金會受到感動，開始投入這個事工，持續為當地少數民族及難民提供醫療服務。",
+        },
+      },
+      "fields.paragraph-28": {
+        text: {
+          en: "Ministry launched",
+          zh: "事工開始年份",
+        },
+      },
+      "fields.paragraph-29": {
+        text: {
+          en: "CCMM · Grace Foundation",
+          zh: "台灣路加 · 恩典基金會",
+        },
+      },
+      "fields.paragraph-30": {
+        text: {
+          en: "Partners",
+          zh: "合作機構",
+        },
+      },
+      "fields.paragraph-31": {
+        text: {
+          en: "Ethnic minorities & refugees",
+          zh: "少數民族及難民",
+        },
+      },
+      "fields.paragraph-32": {
+        text: {
+          en: "Serving",
+          zh: "服務對象",
+        },
+      },
+      "msce.heading-1": {
+        text: {
+          en: "Support Our Ministries",
+          zh: "支持我們的事工",
+        },
+      },
+      "msce.paragraph-1": {
+        classes: {
+          en: ["about-hero-section-1-text-2"],
+          zh: ["about-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Every gift you give enables us to serve more people in more fields.",
+          zh: "您的每一份奉獻，都讓我們能夠在更多工場服事更多的人。",
+        },
+      },
+      "msce.link-1": {
+        text: {
+          en: "Donate Now",
+          zh: "立即奉獻",
+        },
+      },
+      "msce.link-2": {
+        text: {
+          en: "Read Testimonies",
+          zh: "閱讀見證",
+        },
+      },
+      "footer.paragraph-1": {
+        classes: {
+          en: ["footer-text-1"],
+          zh: ["footer-text-4"],
+        },
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑，傳揚基督大愛。",
+        },
+      },
+      "footer.paragraph-2": {
+        text: {
+          en: "Contact",
+          zh: "聯絡資訊",
+        },
+      },
+      "footer.paragraph-3": {
+        text: {
+          en: "Links",
+          zh: "連結",
+        },
+      },
+      "footer.link-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-2.text": {
+        text: {
+          en: "Leave Us a Message",
+          zh: "留下訊息",
+        },
+      },
+      "footer.link-3": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-4.text": {
+        text: {
+          en: "Subscribe to Our Newsletter",
+          zh: "訂閱電子報",
+        },
+      },
+      "footer.link-5": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-6.text": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "footer.link-7": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-8.text": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "footer.paragraph-4": {
+        classes: {
+          en: ["footer-text-3"],
+          zh: ["footer-text-5"],
+        },
+      },
+    },
+  },
+  testimonies: {
+    title: {
+      en: "Testimonies & Archives",
+      zh: "見證與文章",
+    },
+    entries: {
+      "page.link-1": {
+        text: {
+          en: "Skip to content",
+          zh: "跳至主要內容",
+        },
+      },
+      "header.link-1": {
+        attributes: {
+          "aria-label": {
+            en: "Luke Christian Medical Mission",
+            zh: "北美路加醫療傳道會",
+          },
+        },
+      },
+      "header.link-2": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-3": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-4": {
+        classes: {
+          en: ["nav-link-8"],
+          zh: ["nav-link-9"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-5": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-6": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-7": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-8.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-9": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "header.link-10": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-11.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-12": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-13": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-14": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-15": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-16": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-17": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "archive-hero.paragraph-1": {
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "archive-hero.title-1": {
+        text: {
+          en: "Stories of Faith",
+          zh: "生命故事",
+        },
+      },
+      "archive-hero.paragraph-2": {
+        classes: {
+          en: ["archive-hero-section-1-text-1"],
+          zh: ["archive-hero-section-1-text-2"],
+        },
+        text: {
+          en: "Testimonies, articles, missionary stories, and prayer letters — God's grace on every page.",
+          zh: "見證、文章、宣教士故事與代禱信——神的恩典在每一頁中彰顯。",
+        },
+      },
+      "archive-hero.div-1": {
+        attributes: {
+          "aria-label": {
+            en: "Archive categories",
+            zh: "文章分類",
+          },
+        },
+      },
+      "archive-hero.button-1": {
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "archive-hero.button-2": {
+        text: {
+          en: "Bioethics",
+          zh: "生命倫理",
+        },
+      },
+      "archive-hero.button-3": {
+        text: {
+          en: "Missionary Stories",
+          zh: "宣教士故事集",
+        },
+      },
+      "archive-hero.button-4": {
+        text: {
+          en: "Prayer Letters",
+          zh: "代禱信",
+        },
+      },
+      "archive-content.image-1": {
+        attributes: {
+          alt: {
+            en: "Dr. Li-Yuan Shih",
+            zh: "施麗媛醫師",
+          },
+        },
+      },
+      "archive-content.paragraph-1": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"Walking through the valley of the shadow of death, I came to understand God\'s presence and the meaning of medical ministry far more deeply."',
+          zh: "「走過死蔭的幽谷，我更深地體會到神的同在與醫療事工的意義。」",
+        },
+      },
+      "archive-content.div-1": {
+        text: {
+          en: "D",
+          zh: "施",
+        },
+      },
+      "archive-content.paragraph-2": {
+        text: {
+          en: "Dr. Li-Yuan Shih",
+          zh: "施麗媛醫師",
+        },
+      },
+      "archive-content.paragraph-3": {
+        text: {
+          en: "Physician",
+          zh: "醫師",
+        },
+      },
+      "archive-content.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-1": {
+        text: {
+          en: "Read Full Story →",
+          zh: "閱讀完整見證 →",
+        },
+      },
+      "archive-content.image-2": {
+        attributes: {
+          alt: {
+            en: "Hsu-Chu Lin",
+            zh: "林旭珠",
+          },
+        },
+      },
+      "archive-content.paragraph-5": {
+        text: {
+          en: "Hsu-Chu Lin",
+          zh: "林旭珠",
+        },
+      },
+      "archive-content.paragraph-6": {
+        text: {
+          en: "Testimony · Compiled by Chun-Hui Cheng",
+          zh: "見證者 · 整理：鄭純慧",
+        },
+      },
+      "archive-content.paragraph-7": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"After my liver transplant, every single day is a free gift from God. I want to spend the rest of my life glorifying His name."',
+          zh: "「換肝之後，每一天對我來說都是神白白的恩賜，我願用餘生榮耀祂的名。」",
+        },
+      },
+      "archive-content.paragraph-8": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-2": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.image-3": {
+        attributes: {
+          alt: {
+            en: "Standing Firm in the Storm — Nan-San Village",
+            zh: "暴風中仍然堅立的南三村",
+          },
+        },
+      },
+      "archive-content.paragraph-9": {
+        text: {
+          en: "Standing Firm in the Storm — Nan-San Village",
+          zh: "暴風中仍然堅立的南三村",
+        },
+      },
+      "archive-content.paragraph-10": {
+        text: {
+          en: "Field Testimony",
+          zh: "工場見證",
+        },
+      },
+      "archive-content.paragraph-11": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"Even in the storm, the brothers and sisters of Nan-San village stood firm — a living testament to the power of faith and God\'s presence."',
+          zh: "「暴風中，南三村的弟兄姐妹仍然堅立，這是信仰的力量，也是神同在的明證。」",
+        },
+      },
+      "archive-content.paragraph-12": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-3": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.image-4": {
+        attributes: {
+          alt: {
+            en: "Chi-Li Lo",
+            zh: "羅己立",
+          },
+        },
+      },
+      "archive-content.paragraph-13": {
+        text: {
+          en: "Chi-Li Lo",
+          zh: "羅己立",
+        },
+      },
+      "archive-content.paragraph-14": {
+        text: {
+          en: "Medical Missionary · Kenya",
+          zh: "宣教醫生 · 肯亞",
+        },
+      },
+      "archive-content.paragraph-15": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"On the mission field in Kenya, God taught me to rest — to let go and let Him lead."',
+          zh: "「在肯亞的宣教工場，神教導我學習安息，放手讓祂掌權。」",
+        },
+      },
+      "archive-content.paragraph-16": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-4": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.image-5": {
+        attributes: {
+          alt: {
+            en: "Dr. Chun-Hui Liao",
+            zh: "廖俊惠醫師",
+          },
+        },
+      },
+      "archive-content.paragraph-17": {
+        text: {
+          en: "Dr. Chun-Hui Liao",
+          zh: "廖俊惠醫師",
+        },
+      },
+      "archive-content.paragraph-18": {
+        text: {
+          en: "Physician",
+          zh: "醫師",
+        },
+      },
+      "archive-content.paragraph-19": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"The calling of medical missions must be passed from generation to generation. I want to be someone who carries that torch forward."',
+          zh: "「醫療宣教的使命需要一代一代的傳承，我願成為那傳遞火炬的人。」",
+        },
+      },
+      "archive-content.paragraph-20": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-5": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.paragraph-21": {
+        text: {
+          en: "Short-Term Mission Team Member",
+          zh: "短宣隊員",
+        },
+      },
+      "archive-content.paragraph-22": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"Two weeks on the short-term mission changed how I see everything. A seed was planted in my heart that I know will keep growing."',
+          zh: "「短宣的兩週，改變了我對醫療宣教的認識，也在我心中種下了一顆種子。」",
+        },
+      },
+      "archive-content.paragraph-23": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-6": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.image-6": {
+        attributes: {
+          alt: {
+            en: "Hear the Spirit's Groaning · See Amazing Grace",
+            zh: "聽！聖靈的嘆息‧看！奇異的恩典",
+          },
+        },
+      },
+      "archive-content.paragraph-24": {
+        text: {
+          en: "Hear the Spirit's Groaning · See Amazing Grace",
+          zh: "聽！聖靈的嘆息‧看！奇異的恩典",
+        },
+      },
+      "archive-content.paragraph-25": {
+        text: {
+          en: "Field Testimony",
+          zh: "工場見證",
+        },
+      },
+      "archive-content.paragraph-26": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"Listen — the Spirit\'s groaning. Look — amazing grace. On the field, all of this became real before our eyes."',
+          zh: "「聽！聖靈的嘆息；看！奇異的恩典——在工場上，這一切都真實地發生了。」",
+        },
+      },
+      "archive-content.paragraph-27": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-7": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.image-7": {
+        attributes: {
+          alt: {
+            en: "Chih-Hsuan Chou",
+            zh: "周志軒",
+          },
+        },
+      },
+      "archive-content.paragraph-28": {
+        text: {
+          en: "Chih-Hsuan Chou",
+          zh: "周志軒",
+        },
+      },
+      "archive-content.paragraph-29": {
+        text: {
+          en: "Dental Student",
+          zh: "牙醫學生",
+        },
+      },
+      "archive-content.paragraph-30": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"On that northwest mission trip, I — a dental student — truly understood for the first time what it means to serve."',
+          zh: "「在西北短宣的旅途中，我這個牙醫學生，第一次真正明白了什麼叫做『服事』。」",
+        },
+      },
+      "archive-content.paragraph-31": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-8": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.image-8": {
+        attributes: {
+          alt: {
+            en: "Dr. Paul Cheng",
+            zh: "鄭博仁",
+          },
+        },
+      },
+      "archive-content.paragraph-32": {
+        text: {
+          en: "Dr. Paul Cheng",
+          zh: "鄭博仁",
+        },
+      },
+      "archive-content.paragraph-33": {
+        text: {
+          en: "CEO, Luke Christian Medical Mission",
+          zh: "北美路加總幹事",
+        },
+      },
+      "archive-content.paragraph-34": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: '"The call from Cambodia could not be ignored — it was God speaking through suffering, calling us to respond."',
+          zh: "「柬埔寨的呼喚讓我無法忽視——那是神透過苦難向我們說話的聲音。」",
+        },
+      },
+      "archive-content.paragraph-35": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "(Full testimony coming soon)",
+          zh: "（完整見證內容即將刊登）",
+        },
+      },
+      "archive-content.button-9": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.paragraph-36": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "archive-content.paragraph-37": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+      },
+      "archive-content.button-10": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.paragraph-38": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+      },
+      "archive-content.paragraph-39": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+      },
+      "archive-content.button-11": {
+        text: {
+          en: "Full Story →",
+          zh: "完整見證 →",
+        },
+      },
+      "archive-content.paragraph-40": {
+        text: {
+          en: "Bioethics Articles",
+          zh: "生命倫理相關文章",
+        },
+      },
+      "archive-content.heading-1": {
+        text: {
+          en: "Faith and Bioethics in Dialogue",
+          zh: "信仰與生命倫理的對話",
+        },
+      },
+      "archive-content.paragraph-41": {
+        text: {
+          en: "Christian Anthropology and Bioethics",
+          zh: "基督教人觀與生命倫理",
+        },
+      },
+      "archive-content.paragraph-42": {
+        text: {
+          en: "Rev. Ai-Guang Chen",
+          zh: "陳愛光牧師",
+        },
+      },
+      "archive-content.paragraph-43": {
+        text: {
+          en: "Assoc. Prof. of Systematic Theology, Alliance Theological Seminary",
+          zh: "正道福音神學院系統神學副教授",
+        },
+      },
+      "archive-content.paragraph-44": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-45": {
+        text: {
+          en: "Christian Bioethics at Risk — Chinese Churches Must Respond",
+          zh: "基督教生命倫理在危，華人教會須迎戰",
+        },
+      },
+      "archive-content.paragraph-46": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-47": {
+        text: {
+          en: "The Ethics of Embryos and Stem Cells",
+          zh: "胚胎與幹細胞之倫理爭辯",
+        },
+      },
+      "archive-content.paragraph-48": {
+        text: {
+          en: "Dr. Han-Jie Liu",
+          zh: "劉漢杰醫師",
+        },
+      },
+      "archive-content.paragraph-49": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-50": {
+        text: {
+          en: "Exploring the Euthanasia Debate",
+          zh: "從安樂死的爭議探討",
+        },
+      },
+      "archive-content.paragraph-51": {
+        text: {
+          en: "Dr. Paul Cheng",
+          zh: "鄭博仁醫師",
+        },
+      },
+      "archive-content.paragraph-52": {
+        text: {
+          en: "Vice Chair, LCMM",
+          zh: "路加副董事長",
+        },
+      },
+      "archive-content.paragraph-53": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-54": {
+        text: {
+          en: "God's Creation and the Sanctity of Life",
+          zh: "神的創造與生命的神聖",
+        },
+      },
+      "archive-content.paragraph-55": {
+        text: {
+          en: "Rev. Ai-Guang Chen",
+          zh: "陳愛光牧師",
+        },
+      },
+      "archive-content.paragraph-56": {
+        text: {
+          en: "Compiled by Chun-Hui Cheng",
+          zh: "整理：鄭純慧",
+        },
+      },
+      "archive-content.paragraph-57": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-58": {
+        text: {
+          en: "Ethical Issues of Artificial Nutrition and Hydration in Terminal Illness",
+          zh: "重病末期人工營養與水份的倫理議題",
+        },
+      },
+      "archive-content.paragraph-59": {
+        text: {
+          en: "Dr. Chun-Hui Liao",
+          zh: "廖俊惠醫師",
+        },
+      },
+      "archive-content.paragraph-60": {
+        text: {
+          en: "Board Chair, LCMM",
+          zh: "北美路加董事會主席",
+        },
+      },
+      "archive-content.paragraph-61": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-62": {
+        text: {
+          en: "The Mystery of Embryonic Development",
+          zh: "胚胎成長的奧祕",
+        },
+      },
+      "archive-content.paragraph-63": {
+        text: {
+          en: "Prof. Ching-Chu Lin",
+          zh: "林靜竹教授",
+        },
+      },
+      "archive-content.paragraph-64": {
+        text: {
+          en: "Compiled by Ke-Ren Ning",
+          zh: "整理：甯可人",
+        },
+      },
+      "archive-content.paragraph-65": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-66": {
+        text: {
+          en: "Practical Strategies for Chinese Churches in Bioethics Ministry",
+          zh: "華人教會投入生命倫理事工具體對策",
+        },
+      },
+      "archive-content.paragraph-67": {
+        text: {
+          en: "Chia-Yi Ko",
+          zh: "柯嘉怡",
+        },
+      },
+      "archive-content.paragraph-68": {
+        text: {
+          en: "Reporter, Christian Daily",
+          zh: "基督日報記者",
+        },
+      },
+      "archive-content.paragraph-69": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-70": {
+        text: {
+          en: "Respecting Life, Letting Love Continue",
+          zh: "尊重生命、讓愛延續",
+        },
+      },
+      "archive-content.paragraph-71": {
+        text: {
+          en: "Rev. Hui-Zhi Su",
+          zh: "蘇惠智牧師主講",
+        },
+      },
+      "archive-content.paragraph-72": {
+        text: {
+          en: "Compiled by Ching-Yi Lin",
+          zh: "整理：林靜怡",
+        },
+      },
+      "archive-content.paragraph-73": {
+        text: {
+          en: "Full text coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-74": {
+        text: {
+          en: "Medical Missionary Stories",
+          zh: "醫療宣教士故事集",
+        },
+      },
+      "archive-content.heading-2": {
+        text: {
+          en: "Footsteps Across Generations",
+          zh: "跨越時代的宣教腳蹤",
+        },
+      },
+      "archive-content.paragraph-75": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "These stories document how medical missionaries gave their lives and skills to proclaim the Gospel in foreign lands — an inspiration for those who follow.",
+          zh: "這些醫療宣教士的故事，記錄了他們如何用生命和醫術在異鄉傳揚福音，成為後來者的榜樣與激勵。",
+        },
+      },
+      "archive-content.paragraph-76": {
+        text: {
+          en: "Dr. Roland Brown",
+          zh: "薄柔纜醫師",
+        },
+      },
+      "archive-content.paragraph-77": {
+        text: {
+          en: "薄柔纜醫師",
+          zh: "Dr. Roland Brown",
+        },
+      },
+      "archive-content.paragraph-78": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-79": {
+        text: {
+          en: "Dr. Frank Dennis",
+          zh: "譚維義醫師",
+        },
+      },
+      "archive-content.paragraph-80": {
+        text: {
+          en: "譚維義醫師",
+          zh: "Dr. Frank Dennis",
+        },
+      },
+      "archive-content.paragraph-81": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-82": {
+        text: {
+          en: "Dr. Carl H. Epp",
+          zh: "艾可諾醫師",
+        },
+      },
+      "archive-content.paragraph-83": {
+        text: {
+          en: "艾可諾醫師",
+          zh: "Dr. Carl H. Epp",
+        },
+      },
+      "archive-content.paragraph-84": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-85": {
+        text: {
+          en: "Dr. Robert G. Long",
+          zh: "龍樂德醫師",
+        },
+      },
+      "archive-content.paragraph-86": {
+        text: {
+          en: "龍樂德醫師",
+          zh: "Dr. Robert G. Long",
+        },
+      },
+      "archive-content.paragraph-87": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-88": {
+        text: {
+          en: "Dr. M. Samuel Noordhoff",
+          zh: "羅慧夫醫師",
+        },
+      },
+      "archive-content.paragraph-89": {
+        text: {
+          en: "羅慧夫醫師",
+          zh: "Dr. M. Samuel Noordhoff",
+        },
+      },
+      "archive-content.paragraph-90": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-91": {
+        text: {
+          en: "Ms. Bonnie Dirks",
+          zh: "德樂詩護理師",
+        },
+      },
+      "archive-content.paragraph-92": {
+        text: {
+          en: "德樂詩護理師",
+          zh: "Ms. Bonnie Dirks",
+        },
+      },
+      "archive-content.paragraph-93": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-94": {
+        text: {
+          en: "Mrs. Susan Kehler",
+          zh: "馬素珊護理師",
+        },
+      },
+      "archive-content.paragraph-95": {
+        text: {
+          en: "馬素珊護理師",
+          zh: "Mrs. Susan Kehler",
+        },
+      },
+      "archive-content.paragraph-96": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-97": {
+        text: {
+          en: "Ms. Joy Randall",
+          zh: "籃瑪烈護理師",
+        },
+      },
+      "archive-content.paragraph-98": {
+        text: {
+          en: "籃瑪烈護理師",
+          zh: "Ms. Joy Randall",
+        },
+      },
+      "archive-content.paragraph-99": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-100": {
+        text: {
+          en: "Ms. Carol Gunzel",
+          zh: "耿喜音護理師",
+        },
+      },
+      "archive-content.paragraph-101": {
+        text: {
+          en: "耿喜音護理師",
+          zh: "Ms. Carol Gunzel",
+        },
+      },
+      "archive-content.paragraph-102": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-103": {
+        text: {
+          en: "Dr. George Timothy Stafford",
+          zh: "蘇輔道師",
+        },
+      },
+      "archive-content.paragraph-104": {
+        text: {
+          en: "蘇輔道師",
+          zh: "Dr. George Timothy Stafford",
+        },
+      },
+      "archive-content.paragraph-105": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-106": {
+        text: {
+          en: "Dr. Olav Bjorgass",
+          zh: "畢嘉士醫師",
+        },
+      },
+      "archive-content.paragraph-107": {
+        text: {
+          en: "畢嘉士醫師",
+          zh: "Dr. Olav Bjorgass",
+        },
+      },
+      "archive-content.paragraph-108": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-109": {
+        text: {
+          en: "Mr. Bjarne Gislefoss",
+          zh: "徐賓諾護理師",
+        },
+      },
+      "archive-content.paragraph-110": {
+        text: {
+          en: "徐賓諾護理師",
+          zh: "Mr. Bjarne Gislefoss",
+        },
+      },
+      "archive-content.paragraph-111": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-112": {
+        text: {
+          en: "Dr. Ditmanson & Nurse",
+          zh: "戴德森醫師 · 司榮寶護理師",
+        },
+      },
+      "archive-content.paragraph-113": {
+        text: {
+          en: "戴德森醫師 · 司榮寶護理師",
+          zh: "Dr. Ditmanson & Nurse",
+        },
+      },
+      "archive-content.paragraph-114": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-115": {
+        text: {
+          en: "Ms. Kari Jotan",
+          zh: "譚凱莉助產士",
+        },
+      },
+      "archive-content.paragraph-116": {
+        text: {
+          en: "譚凱莉助產士",
+          zh: "Ms. Kari Jotan",
+        },
+      },
+      "archive-content.paragraph-117": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.paragraph-118": {
+        text: {
+          en: "Dr. David Weng",
+          zh: "翁瑞亨醫師",
+        },
+      },
+      "archive-content.paragraph-119": {
+        text: {
+          en: "翁瑞亨醫師",
+          zh: "Dr. David Weng",
+        },
+      },
+      "archive-content.paragraph-120": {
+        text: {
+          en: "Full story coming soon",
+          zh: "故事全文即將上線",
+        },
+      },
+      "archive-content.heading-3": {
+        text: {
+          en: "Medical Students Cultural Exchange Stories",
+          zh: "台美醫護學生交流營故事集",
+        },
+      },
+      "archive-content.paragraph-121": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Since 2011, every MSCE trip has left behind moving stories and testimonies worth preserving.",
+          zh: "自2011年創辦以來，每一屆MSCE都留下了動人的故事與見證。",
+        },
+      },
+      "archive-content.paragraph-122": {
+        text: {
+          en: "MSCE Year 1 Retrospective",
+          zh: "第一屆 MSCE 回顧",
+        },
+      },
+      "archive-content.paragraph-123": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "The inaugural MSCE trip — the beginning of a cross-cultural medical mission training legacy.",
+          zh: "台美醫護學生交流第一屆，開啟跨文化宣教培育事工的序幕。",
+        },
+      },
+      "archive-content.paragraph-124": {
+        text: {
+          en: "Full archive coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-125": {
+        text: {
+          en: "MSCE Year 5 Testimonies",
+          zh: "第五屆 MSCE 見證",
+        },
+      },
+      "archive-content.paragraph-126": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: '"After this journey, my calling to medical missions became clearer than ever."',
+          zh: "「走過這段旅程，我對醫療宣教的呼召更加確定。」",
+        },
+      },
+      "archive-content.paragraph-127": {
+        text: {
+          en: "Full archive coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-128": {
+        text: {
+          en: "MSCE Year 10 Special Issue",
+          zh: "第十屆 MSCE 特刊",
+        },
+      },
+      "archive-content.paragraph-129": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Perseverance through the pandemic — a special retrospective on the virtual MSCE.",
+          zh: "疫情中的堅持——線上 MSCE 特別回顧。",
+        },
+      },
+      "archive-content.paragraph-130": {
+        text: {
+          en: "Full archive coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-131": {
+        text: {
+          en: "MSCE Year 16 Testimonies",
+          zh: "第十六屆 MSCE 見證",
+        },
+      },
+      "archive-content.paragraph-132": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "The 16th MSCE concluded with gratitude for every participant's dedication and commitment.",
+          zh: "第十六屆圓滿落幕，感謝每一位參與者的委身與付出。",
+        },
+      },
+      "archive-content.paragraph-133": {
+        text: {
+          en: "Full archive coming soon",
+          zh: "全文即將上線",
+        },
+      },
+      "archive-content.paragraph-134": {
+        text: {
+          en: "Prayer Letters",
+          zh: "代禱信",
+        },
+      },
+      "archive-content.heading-4": {
+        text: {
+          en: "Pray With Us",
+          zh: "與我們一起禱告",
+        },
+      },
+      "archive-content.paragraph-135": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Prayer is one of the most powerful ways to support the mission field. We send regular prayer letters to keep you informed of the latest news and needs.",
+          zh: "代禱是支持宣教工場最有力的方式之一。我們定期發送代禱信，讓您了解最新的工場動態與需要。",
+        },
+      },
+      "archive-content.paragraph-136": {
+        text: {
+          en: "Fall 2026 Prayer Letter",
+          zh: "2026年秋季代禱信",
+        },
+      },
+      "archive-content.paragraph-137": {
+        text: {
+          en: "September 2026",
+          zh: "2026年9月",
+        },
+      },
+      "archive-content.paragraph-138": {
+        text: {
+          en: "PDF coming soon",
+          zh: "PDF 即將上線",
+        },
+      },
+      "archive-content.paragraph-139": {
+        text: {
+          en: "Spring 2026 Prayer Letter",
+          zh: "2026年春季代禱信",
+        },
+      },
+      "archive-content.paragraph-140": {
+        text: {
+          en: "March 2026",
+          zh: "2026年3月",
+        },
+      },
+      "archive-content.paragraph-141": {
+        text: {
+          en: "PDF coming soon",
+          zh: "PDF 即將上線",
+        },
+      },
+      "archive-content.paragraph-142": {
+        text: {
+          en: "Winter 2025 Prayer Letter",
+          zh: "2025年冬季代禱信",
+        },
+      },
+      "archive-content.paragraph-143": {
+        text: {
+          en: "December 2025",
+          zh: "2025年12月",
+        },
+      },
+      "archive-content.paragraph-144": {
+        text: {
+          en: "PDF coming soon",
+          zh: "PDF 即將上線",
+        },
+      },
+      "archive-content.paragraph-145": {
+        text: {
+          en: "Fall 2025 Prayer Letter",
+          zh: "2025年秋季代禱信",
+        },
+      },
+      "archive-content.paragraph-146": {
+        text: {
+          en: "September 2025",
+          zh: "2025年9月",
+        },
+      },
+      "archive-content.paragraph-147": {
+        text: {
+          en: "PDF coming soon",
+          zh: "PDF 即將上線",
+        },
+      },
+      "archive-content.paragraph-148": {
+        text: {
+          en: "Spring 2025 Prayer Letter",
+          zh: "2025年春季代禱信",
+        },
+      },
+      "archive-content.paragraph-149": {
+        text: {
+          en: "March 2025",
+          zh: "2025年3月",
+        },
+      },
+      "archive-content.paragraph-150": {
+        text: {
+          en: "PDF coming soon",
+          zh: "PDF 即將上線",
+        },
+      },
+      "archive-content.paragraph-151": {
+        text: {
+          en: "Winter 2024 Prayer Letter",
+          zh: "2024年冬季代禱信",
+        },
+      },
+      "archive-content.paragraph-152": {
+        text: {
+          en: "December 2024",
+          zh: "2024年12月",
+        },
+      },
+      "archive-content.paragraph-153": {
+        text: {
+          en: "PDF coming soon",
+          zh: "PDF 即將上線",
+        },
+      },
+      "archive-content.paragraph-154": {
+        text: {
+          en: "Subscribe to Our Prayer Letters",
+          zh: "訂閱我們的代禱信",
+        },
+      },
+      "archive-content.paragraph-155": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Receive the latest ministry updates and prayer needs regularly.",
+          zh: "定期收到最新事工動態與代禱需要。",
+        },
+      },
+      "archive-content.link-1": {
+        text: {
+          en: "Subscribe",
+          zh: "訂閱",
+        },
+      },
+      "share-story.heading-1": {
+        text: {
+          en: "Have a Story to Share?",
+          zh: "您也有故事想分享嗎？",
+        },
+      },
+      "share-story.paragraph-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+        text: {
+          en: "We welcome your personal testimonies, articles, or stories from LCMM ministry.",
+          zh: "歡迎與我們分享您在LCMM事工中的生命故事、見證或文章。",
+        },
+      },
+      "share-story.link-1": {
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "footer.paragraph-1": {
+        classes: {
+          en: ["footer-text-1"],
+          zh: ["footer-text-4"],
+        },
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑，傳揚基督大愛。",
+        },
+      },
+      "footer.paragraph-2": {
+        text: {
+          en: "Contact",
+          zh: "聯絡資訊",
+        },
+      },
+      "footer.paragraph-3": {
+        text: {
+          en: "Links",
+          zh: "連結",
+        },
+      },
+      "footer.link-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-2.text": {
+        text: {
+          en: "Leave Us a Message",
+          zh: "留下訊息",
+        },
+      },
+      "footer.link-3": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-4.text": {
+        text: {
+          en: "Subscribe to Our Newsletter",
+          zh: "訂閱電子報",
+        },
+      },
+      "footer.link-5": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-6.text": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "footer.link-7": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-8.text": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "footer.paragraph-4": {
+        classes: {
+          en: ["footer-text-3"],
+          zh: ["footer-text-5"],
+        },
+      },
+    },
+  },
+  media: {
+    title: {
+      en: "Media",
+      zh: "影音資料庫",
+    },
+    entries: {
+      "page.link-1": {
+        text: {
+          en: "Skip to content",
+          zh: "跳至主要內容",
+        },
+      },
+      "header.link-1": {
+        attributes: {
+          "aria-label": {
+            en: "Luke Christian Medical Mission",
+            zh: "北美路加醫療傳道會",
+          },
+        },
+      },
+      "header.link-2": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-3": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-4": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-5": {
+        classes: {
+          en: ["nav-link-8"],
+          zh: ["nav-link-9"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-6": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-7": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-8.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-9": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "header.link-10": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-11.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-12": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-13": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-14": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-15": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-16": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-17": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "media-hero.paragraph-1": {
+        text: {
+          en: "Media",
+          zh: "多媒體",
+        },
+      },
+      "media-hero.title-1": {
+        text: {
+          en: "Video Archive",
+          zh: "影音資料庫",
+        },
+      },
+      "media-hero.paragraph-2": {
+        classes: {
+          en: ["about-hero-section-1-text-2"],
+          zh: ["about-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Experience LCMM's ministry and life stories up close through video.",
+          zh: "透過影片，近距離感受LCMM的事工現場與生命故事。",
+        },
+      },
+      "media-filters.button-1": {
+        text: {
+          en: "All",
+          zh: "全部",
+        },
+      },
+      "media-filters.button-2": {
+        text: {
+          en: "Ministry",
+          zh: "事工紀錄",
+        },
+      },
+      "media-filters.button-3": {
+        text: {
+          en: "Testimonies",
+          zh: "見證",
+        },
+      },
+      "media-filters.button-4": {
+        text: {
+          en: "Events",
+          zh: "活動講座",
+        },
+      },
+      "media-grid.div-1": {
+        attributes: {
+          "aria-label": {
+            en: "Play video",
+            zh: "播放影片",
+          },
+        },
+      },
+      "media-grid.paragraph-1": {
+        text: {
+          en: "Play",
+          zh: "播放",
+        },
+      },
+      "media-grid.paragraph-2": {
+        text: {
+          en: "Introduction to LCMM",
+          zh: "認識北美路加醫療傳道會",
+        },
+      },
+      "media-grid.paragraph-3": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "An overview of Luke Christian Medical Mission and its ministries.",
+          zh: "北美路加醫療傳道會事工簡介影片。",
+        },
+      },
+      "media-grid.paragraph-4": {
+        text: {
+          en: "Coming Soon",
+          zh: "影片即將上線",
+        },
+      },
+      "media-grid.paragraph-5": {
+        text: {
+          en: "MSCE Highlights",
+          zh: "MSCE 台美醫護學生交流營精華",
+        },
+      },
+      "media-grid.paragraph-6": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "A highlight reel of the Medical Students Cultural Exchange Program and the next generation of medical missionaries.",
+          zh: "台美醫護學生文化交流營的精彩回顧，見證下一代醫療宣教士的成長。",
+        },
+      },
+      "media-grid.paragraph-7": {
+        text: {
+          en: "Coming Soon",
+          zh: "影片即將上線",
+        },
+      },
+      "media-grid.paragraph-8": {
+        text: {
+          en: "Bangladesh Field Report",
+          zh: "孟加拉工場紀錄",
+        },
+      },
+      "media-grid.paragraph-9": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Documenting LCMM's medical service and Gospel work in impoverished Dhaka communities.",
+          zh: "記錄北美路加在達卡貧困社區的醫療服務與福音工作。",
+        },
+      },
+      "media-grid.paragraph-10": {
+        text: {
+          en: "Coming Soon",
+          zh: "影片即將上線",
+        },
+      },
+      "media-grid.paragraph-11": {
+        text: {
+          en: "Namibia Field Report",
+          zh: "納米比亞工場紀錄",
+        },
+      },
+      "media-grid.paragraph-12": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Rev. Yukon Chen's slum church ministry and LCMM's new Africa partnership.",
+          zh: "陳玉昆牧師貧民窟教會事工與北美路加的非洲新事工。",
+        },
+      },
+      "media-grid.paragraph-13": {
+        text: {
+          en: "Coming Soon",
+          zh: "影片即將上線",
+        },
+      },
+      "media-grid.paragraph-14": {
+        text: {
+          en: "Bioethics Seminar Recording",
+          zh: "生命倫理講座紀錄",
+        },
+      },
+      "media-grid.paragraph-15": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Highlights from LCMM's bioethics seminar, exploring Christian faith and modern medical ethics.",
+          zh: "北美路加主辦生命倫理研討會精華，探討基督信仰與現代醫學倫理。",
+        },
+      },
+      "media-grid.paragraph-16": {
+        text: {
+          en: "Coming Soon",
+          zh: "影片即將上線",
+        },
+      },
+      "media-grid.paragraph-17": {
+        text: {
+          en: "Testimony Screening",
+          zh: "見證分享影片",
+        },
+      },
+      "media-grid.paragraph-18": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Video testimonies from LCMM coworkers and missionaries.",
+          zh: "LCMM同工及宣教士的生命見證影片分享。",
+        },
+      },
+      "share-video.heading-1": {
+        text: {
+          en: "Have a Video to Share?",
+          zh: "有影片想與我們分享？",
+        },
+      },
+      "share-video.paragraph-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+        text: {
+          en: "If you have LCMM-related video content, contact us — we'd love to include it in our archive.",
+          zh: "若您有LCMM相關的影片或短片，歡迎聯絡我們，我們很樂意將其收錄於資料庫。",
+        },
+      },
+      "share-video.link-1": {
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "footer.paragraph-1": {
+        classes: {
+          en: ["footer-text-1"],
+          zh: ["footer-text-4"],
+        },
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑，傳揚基督大愛。",
+        },
+      },
+      "footer.paragraph-2": {
+        text: {
+          en: "Contact",
+          zh: "聯絡資訊",
+        },
+      },
+      "footer.paragraph-3": {
+        text: {
+          en: "Links",
+          zh: "連結",
+        },
+      },
+      "footer.link-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-2.text": {
+        text: {
+          en: "Leave Us a Message",
+          zh: "留下訊息",
+        },
+      },
+      "footer.link-3": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-4.text": {
+        text: {
+          en: "Subscribe to Our Newsletter",
+          zh: "訂閱電子報",
+        },
+      },
+      "footer.link-5": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-6.text": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "footer.link-7": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-8.text": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "footer.paragraph-4": {
+        classes: {
+          en: ["footer-text-3"],
+          zh: ["footer-text-5"],
+        },
+      },
+    },
+  },
+  contact: {
+    title: {
+      en: "Contact",
+      zh: "聯絡我們",
+    },
+    entries: {
+      "page.link-1": {
+        text: {
+          en: "Skip to content",
+          zh: "跳至主要內容",
+        },
+      },
+      "header.link-1": {
+        attributes: {
+          "aria-label": {
+            en: "Luke Christian Medical Mission",
+            zh: "北美路加醫療傳道會",
+          },
+        },
+      },
+      "header.link-2": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-3": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-4": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-5": {
+        classes: {
+          en: ["nav-link-2"],
+          zh: ["nav-link-6"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-6": {
+        classes: {
+          en: ["nav-link-8"],
+          zh: ["nav-link-9"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-7": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-8.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-9": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "header.link-10": {
+        attributes: {
+          "aria-label": {
+            en: "切換為中文",
+            zh: "Switch to English",
+          },
+        },
+      },
+      "header.link-11.text": {
+        text: {
+          en: "繁中",
+          zh: "EN",
+        },
+      },
+      "header.link-12": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "header.link-13": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "header.link-14": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Testimonies",
+          zh: "見證分享",
+        },
+      },
+      "header.link-15": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Media",
+          zh: "影音資料庫",
+        },
+      },
+      "header.link-16": {
+        classes: {
+          en: ["nav-link-4"],
+          zh: ["nav-link-7"],
+        },
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "header.link-17": {
+        text: {
+          en: "Support Us",
+          zh: "奉獻支持",
+        },
+      },
+      "contact-hero.paragraph-1": {
+        text: {
+          en: "Contact Us",
+          zh: "聯絡我們",
+        },
+      },
+      "contact-hero.title-1": {
+        text: {
+          en: "We'd love to hear from you",
+          zh: "我們很樂意聽到您的聲音",
+        },
+      },
+      "contact-hero.paragraph-2": {
+        classes: {
+          en: ["about-hero-section-1-text-2"],
+          zh: ["about-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Whether you have questions, want to learn more about our ministries, or are interested in joining us — reach out anytime.",
+          zh: "無論您有任何問題、想要了解更多事工資訊，或希望加入我們的行列，歡迎隨時與我們聯繫。",
+        },
+      },
+      "contact-details.heading-1": {
+        text: {
+          en: "Send a Message",
+          zh: "傳送訊息",
+        },
+      },
+      "contact-details.paragraph-1": {
+        text: {
+          en: "This form opens your email app. Review and send your message there.",
+          zh: "此表單會開啟您的電子郵件程式，請在程式中確認並寄出訊息。",
+        },
+      },
+      "contact-details.label-1": {
+        text: {
+          en: "Your Name",
+          zh: "您的姓名",
+        },
+      },
+      "contact-details.input-1": {
+        classes: {
+          en: ["programs-section-1-input-1"],
+          zh: ["programs-section-1-input-2"],
+        },
+      },
+      "contact-details.label-2": {
+        text: {
+          en: "Email Address",
+          zh: "電子郵件",
+        },
+      },
+      "contact-details.input-2": {
+        classes: {
+          en: ["programs-section-1-input-1"],
+          zh: ["programs-section-1-input-2"],
+        },
+      },
+      "contact-details.label-3": {
+        text: {
+          en: "Subject",
+          zh: "主旨",
+        },
+      },
+      "contact-details.input-3": {
+        classes: {
+          en: ["programs-section-1-input-1"],
+          zh: ["programs-section-1-input-2"],
+        },
+      },
+      "contact-details.label-4": {
+        text: {
+          en: "Message",
+          zh: "訊息內容",
+        },
+      },
+      "contact-details.textarea-1": {
+        classes: {
+          en: ["programs-section-1-input-1"],
+          zh: ["programs-section-1-input-2"],
+        },
+      },
+      "contact-details.button-1": {
+        text: {
+          en: "Open Email Draft",
+          zh: "開啟電子郵件草稿",
+        },
+      },
+      "contact-details.heading-2": {
+        text: {
+          en: "Office Information",
+          zh: "辦公室資訊",
+        },
+      },
+      "contact-details.paragraph-2": {
+        text: {
+          en: "Office Hours",
+          zh: "辦公時間",
+        },
+      },
+      "contact-details.paragraph-3": {
+        text: {
+          en: "Monday – Friday, 9:00 AM – 5:00 PM (PST)",
+          zh: "週一至週五 9:00 AM – 5:00 PM (PST)",
+        },
+      },
+      "faq.heading-1": {
+        text: {
+          en: "Frequently Asked Questions",
+          zh: "常見問題",
+        },
+      },
+      "faq.label-1": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "How do I join a short-term mission team?",
+          zh: "如何參加短宣隊？",
+        },
+      },
+      "faq.paragraph-1": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Contact us via the form or email below. We'll provide application details and upcoming schedules.",
+          zh: "請透過聯絡表單或電子郵件與我們聯繫，我們會提供詳細的申請資訊及時間表。",
+        },
+      },
+      "faq.label-2": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "How are donations used?",
+          zh: "奉獻款項如何使用？",
+        },
+      },
+      "faq.paragraph-2": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "All donations go directly to medical mission work, missionary support, and community service programs.",
+          zh: "所有奉獻款項將直接用於醫療傳道事工、海外宣教士支持及社區服務計劃。",
+        },
+      },
+      "faq.label-3": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "Can I participate if I'm not a medical professional?",
+          zh: "我不是醫護人員，可以參與嗎？",
+        },
+      },
+      "faq.paragraph-3": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Absolutely! We welcome Christians from all backgrounds — including administration, translation, education, and other non-medical roles.",
+          zh: "當然可以！我們歡迎各行各業的基督徒參與，包括行政支援、翻譯、教育及其他非醫療服務。",
+        },
+      },
+      "faq.label-4": {
+        classes: {
+          en: ["film-section-1-text-1"],
+          zh: ["film-section-1-text-2"],
+        },
+        text: {
+          en: "How do I subscribe to The Calling newsletter?",
+          zh: "如何訂閱電子報《The Calling》？",
+        },
+      },
+      "faq.paragraph-4": {
+        classes: {
+          en: ["home-hero-section-1-text-2"],
+          zh: ["home-hero-section-1-text-3"],
+        },
+        text: {
+          en: "Fill out the contact form and write 'Newsletter Subscription' in the subject field. We'll add you to our mailing list.",
+          zh: "請填寫右側聯絡表單並在主旨欄填寫「訂閱電子報」，我們將您加入訂閱名單。",
+        },
+      },
+      "footer.paragraph-1": {
+        classes: {
+          en: ["footer-text-1"],
+          zh: ["footer-text-4"],
+        },
+        text: {
+          en: "Healthcare as a bridge to spread the Gospel.",
+          zh: "以醫療為橋樑，傳揚基督大愛。",
+        },
+      },
+      "footer.paragraph-2": {
+        text: {
+          en: "Contact",
+          zh: "聯絡資訊",
+        },
+      },
+      "footer.paragraph-3": {
+        text: {
+          en: "Links",
+          zh: "連結",
+        },
+      },
+      "footer.link-1": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-2.text": {
+        text: {
+          en: "Leave Us a Message",
+          zh: "留下訊息",
+        },
+      },
+      "footer.link-3": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-4.text": {
+        text: {
+          en: "Subscribe to Our Newsletter",
+          zh: "訂閱電子報",
+        },
+      },
+      "footer.link-5": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-6.text": {
+        text: {
+          en: "About Us",
+          zh: "關於我們",
+        },
+      },
+      "footer.link-7": {
+        classes: {
+          en: ["footer-box-1"],
+          zh: ["footer-link-1"],
+        },
+      },
+      "footer.link-8.text": {
+        text: {
+          en: "Ministries",
+          zh: "事工項目",
+        },
+      },
+      "footer.paragraph-4": {
+        classes: {
+          en: ["footer-text-3"],
+          zh: ["footer-text-5"],
+        },
+      },
+    },
+  },
+};
