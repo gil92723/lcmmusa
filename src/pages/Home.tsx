@@ -17,6 +17,7 @@ import {
   youtubeEmbedUrl,
   type MediaVideo,
 } from "@/sanity/videos"
+import { MinistryCards } from "@/components/MinistryExplorer"
 
 export default function Home() {
   const { text, attrs, label , lang} = usePageCopy("index")
@@ -215,110 +216,7 @@ export default function Home() {
 
       {/* programs */}
 
-      <section
-        id="programs"
-        className="transition-colors duration-300 programs programs-section-1"
-      >
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-12 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div className="max-w-xl">
-              <h2
-                {...attrs(
-                  "programs.heading-1",
-                  "text-4xl font-bold mb-4 home-hero-section-1-title-1",
-                )}
-                data-i18n="programs.heading-1"
-              >
-                {text("programs.heading-1")}
-              </h2>
-              <p
-                {...attrs(
-                  "programs.paragraph-1",
-                  "text-lg home-hero-section-1-text-2",
-                )}
-                data-i18n="programs.paragraph-1"
-              >
-                {text("programs.paragraph-1")}
-              </p>
-            </div>
-            <AppLink
-              {...attrs(
-                "programs.link-1",
-                "shrink-0 text-sm font-semibold transition-opacity hover:opacity-70 whitespace-nowrap home-hero-section-1-text-1",
-              )}
-              href="ministries.html"
-              data-i18n="programs.link-1"
-            >
-              {text("programs.link-1")}
-            </AppLink>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-xl p-6 transition-all duration-200 hover:-translate-y-1 cursor-default programs-section-1-box-1">
-              <div className="text-3xl mb-4">{"🏥"}</div>
-              <h3
-                {...attrs(
-                  "programs.subheading-1",
-                  "font-bold text-lg mb-2 home-hero-section-1-title-1",
-                )}
-                data-i18n="programs.subheading-1"
-              >
-                {text("programs.subheading-1")}
-              </h3>
-              <p
-                {...attrs(
-                  "programs.paragraph-2",
-                  "text-sm leading-relaxed home-hero-section-1-text-2",
-                )}
-                data-i18n="programs.paragraph-2"
-              >
-                {text("programs.paragraph-2")}
-              </p>
-            </div>
-            <div className="rounded-xl p-6 transition-all duration-200 hover:-translate-y-1 cursor-default programs-section-1-box-1">
-              <div className="text-3xl mb-4">{"🤲"}</div>
-              <h3
-                {...attrs(
-                  "programs.subheading-2",
-                  "font-bold text-lg mb-2 home-hero-section-1-title-1",
-                )}
-                data-i18n="programs.subheading-2"
-              >
-                {text("programs.subheading-2")}
-              </h3>
-              <p
-                {...attrs(
-                  "programs.paragraph-3",
-                  "text-sm leading-relaxed home-hero-section-1-text-2",
-                )}
-                data-i18n="programs.paragraph-3"
-              >
-                {text("programs.paragraph-3")}
-              </p>
-            </div>
-            <div className="rounded-xl p-6 transition-all duration-200 hover:-translate-y-1 cursor-default programs-section-1-box-1">
-              <div className="text-3xl mb-4">{"🎓"}</div>
-              <h3
-                {...attrs(
-                  "programs.subheading-3",
-                  "font-bold text-lg mb-2 home-hero-section-1-title-1",
-                )}
-                data-i18n="programs.subheading-3"
-              >
-                {text("programs.subheading-3")}
-              </h3>
-              <p
-                {...attrs(
-                  "programs.paragraph-4",
-                  "text-sm leading-relaxed home-hero-section-1-text-2",
-                )}
-                data-i18n="programs.paragraph-4"
-              >
-                {text("programs.paragraph-4")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <MinistryCards />
 
       {/* testimonies-preview */}
 
