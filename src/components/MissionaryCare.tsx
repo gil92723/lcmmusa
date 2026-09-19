@@ -158,7 +158,7 @@ export default function MissionaryCare() {
     }
 
     return (
-      <div className="grid items-start gap-6 md:grid-cols-2">
+      <div className="flex flex-col gap-6">
         {profiles.map((profile) => {
           const name = localized(profile.nameEn, profile.nameZh)
           const photo = imageUrl(profile.photo, 900)

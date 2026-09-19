@@ -111,7 +111,7 @@ export default function HealthMinistry() {
 
   function renderEntries(entries: Entry[], isEvent: boolean) {
     return (
-      <div className="grid items-start gap-6 md:grid-cols-2">
+      <div className="flex flex-col gap-6">
         {entries.map((entry) => {
           const title =
             localized(entry.titleEn, entry.titleZh) ||
