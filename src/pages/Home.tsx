@@ -10,7 +10,7 @@ import {
   DemoPostCard,
 } from "@/lib/ui"
 import MinistryCarousel from "@/components/MinistryCarousel"
-import SanityPosts from "@/components/SanityPosts"
+import CommunityBoard from "@/components/CommunityBoard"
 
 export default function Home() {
   const { text, attrs, label } = usePageCopy("index")
@@ -439,9 +439,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest Sanity posts use the former community-board position. */}
 
-      <SanityPosts />
+      <CommunityBoard />
 
       {/* missions */}
 
