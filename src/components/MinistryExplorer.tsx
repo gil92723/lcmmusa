@@ -1,6 +1,7 @@
 import { useEffect, type ReactNode } from "react"
 import { Link, useLocation, useSearchParams } from "react-router"
 import { usePageCopy } from "@/lib/ui"
+import HealthMinistry from "@/components/HealthMinistry"
 
 const ministries = [
   {
@@ -203,27 +204,33 @@ export default function MinistryExplorer({
             hidden={activeTab !== tab.id}
             tabIndex={0}
           >
-            <div className="mx-auto max-w-6xl px-6">
-              <h2
-                {...attrs(
-                  `programs.subheading-${tab.number}`,
-                  "mb-5 text-3xl font-bold home-hero-section-1-title-1",
-                )}
-              >
-                {text(`programs.subheading-${tab.number}`)}
-              </h2>
+            {tab.id === "health" ? (
+            activeTab === "health" && <HealthMinistry />
+            ) : (
+            <>
+                <div className="mx-auto max-w-6xl px-6">
+                <h2
+                    {...attrs(
+                    `programs.subheading-${tab.number}`,
+                    "mb-5 text-3xl font-bold home-hero-section-1-title-1",
+                    )}
+                >
+                    {text(`programs.subheading-${tab.number}`)}
+                </h2>
 
-              <p
-                {...attrs(
-                  `programs.paragraph-${tab.number}`,
-                  "max-w-3xl whitespace-pre-line text-lg leading-relaxed home-hero-section-1-text-2",
-                )}
-              >
-                {text(`programs.paragraph-${tab.number}`)}
-              </p>
-            </div>
+                <p
+                    {...attrs(
+                    `programs.paragraph-${tab.number}`,
+                    "max-w-3xl whitespace-pre-line text-lg leading-relaxed home-hero-section-1-text-2",
+                    )}
+                >
+                    {text(`programs.paragraph-${tab.number}`)}
+                </p>
+                </div>
 
-            {tab.id === "overseas" && activeTab === tab.id && children}
+                {tab.id === "overseas" && activeTab === tab.id && children}
+            </>
+            )}
           </div>
         ))}
       </section>
