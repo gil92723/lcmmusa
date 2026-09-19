@@ -215,9 +215,13 @@ export default function Home() {
       </section>
 
       {/* programs */}
-
-      <MinistryCards />
-
+      <section
+        id="programs"
+        className="transition-colors duration-300 programs programs-section-1">
+          <div className="max-w-6xl mx-auto px-6">
+            <MinistryCards />
+        </div>
+      </section>
       {/* testimonies-preview */}
 
       <section
