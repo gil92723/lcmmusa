@@ -22,3 +22,37 @@
 .cms-post { color: var(--foreground); overflow-wrap: anywhere; }
 [data-theme="dark"] :is(.cms-section, .cms-post) { --foreground: #e8f0fa; --secondary: #12283e; --card: #18324b; --card-foreground: #e8f0fa; --border: #36516b; --primary: #7eb3f7; }
 .cms-prose { --tw-prose-body: var(--foreground); --tw-prose-headings: var(--foreground); --tw-prose-links: var(--primary); --tw-prose-bold: var(--foreground); --tw-prose-counters: var(--foreground); --tw-prose-bullets: var(--foreground); --tw-prose-quotes: var(--foreground); --tw-prose-code: var(--foreground); --tw-prose-hr: var(--border); --tw-prose-quote-borders: var(--border); }
+
+.missionary-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  min-width: 0;
+  border-radius: 1rem;
+  align-items: start;
+}
+
+.missionary-profile__photo {
+  min-width: 0;
+  padding: 1.5rem;
+}
+
+.missionary-profile__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.missionary-profile__content {
+  min-width: 0;
+  padding: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .missionary-profile--with-photo {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+}
