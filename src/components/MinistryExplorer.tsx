@@ -2,6 +2,7 @@ import { useEffect, type ReactNode } from "react"
 import { Link, useLocation, useSearchParams } from "react-router"
 import { usePageCopy } from "@/lib/ui"
 import HealthMinistry from "@/components/HealthMinistry"
+import MissionaryCare from "@/components/MissionaryCare"
 
 const ministries = [
   {
@@ -206,6 +207,8 @@ export default function MinistryExplorer({
           >
             {tab.id === "health" ? (
             activeTab === "health" && <HealthMinistry />
+            ) : tab.id === "missionary-care" ? (
+            activeTab === "missionary-care" && <MissionaryCare />
             ) : (
             <>
                 <div className="mx-auto max-w-6xl px-6">
