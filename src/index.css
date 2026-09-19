@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap");
+@import "tailwindcss";
+@import "./styles/layout.css";
+@import "./styles/phoenix.css";
+
+/* The Phoenix style sheets retain the approved design; new components can use Tailwind. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+}
+[data-i18n="programs.paragraph-3"] { white-space: pre-line; }
