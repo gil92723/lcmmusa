@@ -192,3 +192,33 @@
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+/* All heroes: navigation clearance + a small gap */
+.about-hero-section-1,
+.archive-hero-section-1,
+.home-hero > div:first-child {
+  padding-top: calc(60px + 0.5rem);
+}
+
+/* About, Ministries, Media, and Contact */
+.about-hero-section-1 {
+  padding-bottom: 1rem;
+}
+
+/* Homepage introduction and carousel */
+.home-hero > div:first-child {
+  padding-bottom: 0.75rem;
+}
+
+.home-hero > div:last-child {
+  padding-bottom: 1rem;
+}
+
+/* Testimonies introduction and tabs */
+.archive-hero-section-1 {
+  padding-bottom: 0;
+}
+
+.archive-hero > div:first-child {
+  padding-bottom: 0.75rem;
+}

@@ -365,97 +365,19 @@ export default function About() {
             >
               {text("invitation.heading-1")}
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="rounded-xl p-6 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-1 film-section-1-box-4">
-                <div className="flex items-center gap-3 mb-1">
-                  <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0 programs-section-1-box-2">
-                    {"1"}
-                  </span>
-                  <p
-                    {...attrs(
-                      "invitation.paragraph-2",
-                      "font-semibold text-sm film-section-1-text-1",
-                    )}
-                    data-i18n="invitation.paragraph-2"
-                  >
-                    {text("invitation.paragraph-2")}
-                  </p>
-                </div>
-              </div>
-              <div className="rounded-xl p-6 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-1 film-section-1-box-4">
-                <div className="flex items-center gap-3 mb-1">
-                  <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0 programs-section-1-box-2">
-                    {"2"}
-                  </span>
-                  <p
-                    {...attrs(
-                      "invitation.paragraph-3",
-                      "font-semibold text-sm film-section-1-text-1",
-                    )}
-                    data-i18n="invitation.paragraph-3"
-                  >
-                    {text("invitation.paragraph-3")}
-                  </p>
-                </div>
-              </div>
-              <div className="rounded-xl p-6 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-1 film-section-1-box-4">
-                <div className="flex items-center gap-3 mb-1">
-                  <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0 programs-section-1-box-2">
-                    {"3"}
-                  </span>
-                  <p
-                    {...attrs(
-                      "invitation.paragraph-4",
-                      "font-semibold text-sm film-section-1-text-1",
-                    )}
-                    data-i18n="invitation.paragraph-4"
-                  >
-                    {text("invitation.paragraph-4")}
-                  </p>
-                </div>
-              </div>
-              <div className="rounded-xl p-6 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-1 film-section-1-box-4">
-                <div className="flex items-center gap-3 mb-1">
-                  <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0 programs-section-1-box-2">
-                    {"4"}
-                  </span>
-                  <p
-                    {...attrs(
-                      "invitation.paragraph-5",
-                      "font-semibold text-sm film-section-1-text-1",
-                    )}
-                    data-i18n="invitation.paragraph-5"
-                  >
-                    {text("invitation.paragraph-5")}
-                  </p>
-                </div>
-              </div>
-              <div className="rounded-xl p-6 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-1 film-section-1-box-4">
-                <div className="flex items-center gap-3 mb-1">
-                  <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0 programs-section-1-box-2">
-                    {"5"}
-                  </span>
-                  <p
-                    {...attrs(
-                      "invitation.paragraph-6",
-                      "font-semibold text-sm film-section-1-text-1",
-                    )}
-                    data-i18n="invitation.paragraph-6"
-                  >
-                    {text("invitation.paragraph-6")}
-                  </p>
-                </div>
-                <p
-                  {...attrs(
-                    "invitation.paragraph-7",
-                    "text-xs leading-relaxed pl-10 home-hero-section-1-text-2",
+            <ol className="list-decimal space-y-3 pl-5 text-base home-hero-section-1-text-2">
+              {[2, 3, 4, 5, 6].map((number) => (
+                <li key={number} className="pl-1">
+                  <p>{text(`invitation.paragraph-${number}`)}</p>
+
+                  {number === 6 && (
+                    <p className="mt-1 text-sm leading-relaxed">
+                      {text("invitation.paragraph-7")}
+                    </p>
                   )}
-                  data-i18n="invitation.paragraph-7"
-                >
-                  {text("invitation.paragraph-7")}
-                </p>
-              </div>
-            </div>
+                </li>
+              ))}
+            </ol>
             <div className="mt-8 flex flex-wrap gap-4">
               <AppLink
                 {...attrs(
