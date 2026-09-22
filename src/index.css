@@ -4,6 +4,15 @@
 @import "./styles/phoenix.css";
 @plugin "@tailwindcss/typography";
 
+/* Ministry summaries remain visible on touch, mouse, and keyboard. */
+.ministry-card { transition: box-shadow 160ms ease; }
+.ministry-card:hover,
+.ministry-card:focus-visible { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16); }
+.ministry-card:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  .ministry-card { transition: none; }
+}
+
 /* The Phoenix style sheets retain the approved design; new components can use Tailwind. */
 @theme inline {
   --color-background: var(--background);

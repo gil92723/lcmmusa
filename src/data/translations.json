@@ -2065,6 +2065,42 @@
           "zh": "從社區健康講座到海外短宣，主的愛藉醫療事工廣傳各地。"
         }
       },
+      "programs.card-summary-1": {
+        "text": {
+          "en": "Community health talks and conversations about bioethics through the lens of faith.",
+          "zh": "透過社區健康講座，分享醫療知識，從信仰角度探討生命倫理。"
+        }
+      },
+      "programs.card-summary-2": {
+        "text": {
+          "en": "Practical, emotional, and spiritual support for active and retired medical missionaries.",
+          "zh": "以實際行動、情感陪伴與靈性關懷，支持現役及退休醫護宣教士。"
+        }
+      },
+      "programs.card-summary-3": {
+        "text": {
+          "en": "Equipping young healthcare professionals through MSCE cultural exchange and English ministry.",
+          "zh": "透過台美醫護學生文化交流營（MSCE）及英文事工，培育下一代基督徒醫護人員。"
+        }
+      },
+      "programs.card-summary-4": {
+        "text": {
+          "en": "Partnering with medical missionaries and sending short-term teams to serve overseas.",
+          "zh": "與醫療宣教士及宣教機構合作，差派短宣隊參與海外服事。"
+        }
+      },
+      "programs.card-summary-5": {
+        "text": {
+          "en": "Supporting Starlight Ambassadors who live and serve in Indigenous communities in Taitung.",
+          "zh": "支持長期住在台東部落的星光大使，陪伴居民，分享生命與盼望。"
+        }
+      },
+      "programs.card-summary-6": {
+        "text": {
+          "en": "Supporting medical missions through partnerships, student education, and The Calling newsletter.",
+          "zh": "透過機構合作、醫學生教育支持及《The Calling》刊物，推展醫療宣教。"
+        }
+      },
       "programs.subheading-1": {
         "text": {
           "en": "Health Talk & Bioethics Conference",

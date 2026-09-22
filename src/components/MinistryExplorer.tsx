@@ -1,49 +1,45 @@
-import { useEffect, type ReactNode } from "react"
+import { useEffect, useState, type ReactNode } from "react"
 import { Link, useLocation, useSearchParams } from "react-router"
 import { usePageCopy } from "@/lib/ui"
 import HealthMinistry from "@/components/HealthMinistry"
 import MissionaryCare from "@/components/MissionaryCare"
+import useSanityQuery from "@/sanity/useSanityQuery"
+import { MINISTRY_CARDS_QUERY, ministryCardImageUrl, type MinistryCardPhoto } from "@/sanity/ministryCards"
 
 const ministries = [
   {
     id: "health",
     number: 1,
-    icon: "🏥",
     en: "Health & Bioethics",
     zh: "健康與生命倫理",
   },
   {
     id: "missionary-care",
     number: 2,
-    icon: "🤲",
     en: "Missionary Care",
     zh: "宣教士關懷",
   },
   {
     id: "next-gen",
     number: 3,
-    icon: "🎓",
     en: "Next Generation",
     zh: "第二代培育",
   },
   {
     id: "overseas",
     number: 4,
-    icon: "🌏",
     en: "Overseas Missions",
     zh: "海外事工",
   },
   {
     id: "starlight",
     number: 5,
-    icon: "⭐",
     en: "Tribal Starlight",
     zh: "部落星光",
   },
   {
     id: "other",
     number: 6,
-    icon: "📖",
     en: "Other Ministries",
     zh: "其他事工",
   },
@@ -51,45 +47,69 @@ const ministries = [
 
 const tabs = ministries.slice(0, 5)
 
-// Shared by the homepage and Ministries page.
+// A failed image falls back to the text card. A new URL remounts this component.
+function MinistryPhoto({ src, alt }: { src: string; alt: string }) {
+  const [failed, setFailed] = useState(false)
+  if (failed) return null
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={960}
+      height={600}
+      loading="lazy"
+      decoding="async"
+      onError={() => setFailed(true)}
+      className="aspect-[8/5] w-full object-cover"
+    />
+  )
+}
+
+// Shared by the homepage (first three) and Ministries page (all six).
 export function MinistryCards({ limit }: { limit?: number }) {
-  const { text, attrs, label } = usePageCopy("ministries")
+  const { text, attrs, lang } = usePageCopy("ministries")
+  const { data: photos } = useSanityQuery<MinistryCardPhoto[]>(MINISTRY_CARDS_QUERY)
 
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {ministries.slice(0, limit).map((ministry) => (
-        <Link
-          key={ministry.id}
-          to={`/ministries?tab=${ministry.id}`}
-          className="programs-section-1-box-1 flex flex-col gap-4 rounded-xl p-6 transition-transform hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4"
-        >
-          <span className="text-4xl" aria-hidden="true">
-            {ministry.icon}
-          </span>
+      {ministries.slice(0, limit).map((ministry) => {
+        // Newest published image wins if an editor accidentally creates a duplicate.
+        const photo = photos?.find((entry) => entry.ministry === ministry.id)
+        const src = ministryCardImageUrl(photo?.image)
+        const alt = lang === "zh"
+          ? photo?.image.altZh || photo?.image.altEn || ""
+          : photo?.image.altEn || photo?.image.altZh || ""
 
-          <h3
-            {...attrs(
-              `programs.subheading-${ministry.number}`,
-              "text-lg font-bold home-hero-section-1-title-1",
-            )}
+        return (
+          <Link
+            key={ministry.id}
+            to={`/ministries?tab=${ministry.id}`}
+            className="ministry-card programs-section-1-box-1 flex min-w-0 flex-col overflow-hidden rounded-xl"
           >
-            {text(`programs.subheading-${ministry.number}`)}
-          </h3>
+            {src && <MinistryPhoto key={src} src={src} alt={alt} />}
 
-          <p
-            {...attrs(
-              `programs.paragraph-${ministry.number}`,
-              "text-sm leading-relaxed home-hero-section-1-text-2",
-            )}
-          >
-            {text(`programs.paragraph-${ministry.number}`)}
-          </p>
+            <div className="flex flex-1 flex-col gap-3 p-6">
+              <h3
+                {...attrs(
+                  `programs.subheading-${ministry.number}`,
+                  "text-lg font-bold home-hero-section-1-title-1",
+                )}
+              >
+                {text(`programs.subheading-${ministry.number}`)}
+              </h3>
 
-          <span className="mt-auto pt-2 text-sm font-semibold home-hero-section-1-text-1">
-            {label("Learn more →", "了解更多 →")}
-          </span>
-        </Link>
-      ))}
+              <p className="text-base leading-relaxed home-hero-section-1-text-2">
+                {text(`programs.card-summary-${ministry.number}`)}
+              </p>
+
+              <span className="mt-auto pt-2 text-sm font-semibold home-hero-section-1-text-1">
+                {lang === "zh" ? "了解更多 →" : "Learn more →"}
+              </span>
+            </div>
+          </Link>
+        )
+      })}
     </div>
   )
 }
