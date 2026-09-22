@@ -432,13 +432,41 @@ export default function MissionaryCare() {
         aria-labelledby="retired-missionaries-heading"
         className="scroll-mt-28"
       >
-        <h3
-          id="retired-missionaries-heading"
-          tabIndex={-1}
-          className="mb-6 text-2xl font-bold home-hero-section-1-title-1"
-        >
-          {label("Retired Medical Missionaries", "退休醫護宣教士")}
-        </h3>
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+          <h3
+            id="retired-missionaries-heading"
+            tabIndex={-1}
+            className="text-2xl font-bold home-hero-section-1-title-1"
+          >
+            {label("Retired Medical Missionaries", "退休醫護宣教士")}
+          </h3>
+
+          <button
+            type="button"
+            onClick={() => {
+              const target = document.getElementById(
+                "current-missionaries-heading",
+              )
+              if (!target) return
+
+              const reduceMotion = window.matchMedia(
+                "(prefers-reduced-motion: reduce)",
+              ).matches
+
+              target.focus({ preventScroll: true })
+              target.scrollIntoView({
+                behavior: reduceMotion ? "instant" : "smooth",
+                block: "start",
+              })
+            }}
+            className="text-sm font-semibold underline underline-offset-4 home-hero-section-1-text-1"
+          >
+            {label(
+              "Jump to current missionaries ↓",
+              "前往現役宣教士 ↓",
+            )}
+          </button>
+        </div>
 
         {data && !loading && !error &&
           renderMissionaries(data.retired)}
@@ -468,7 +496,8 @@ export default function MissionaryCare() {
       <section aria-labelledby="current-missionaries-heading">
         <h3
           id="current-missionaries-heading"
-          className="mb-6 text-2xl font-bold home-hero-section-1-title-1"
+          tabIndex={-1}
+          className="mb-6 scroll-mt-28 text-2xl font-bold home-hero-section-1-title-1"
         >
           {label(
             "Currently Supported Medical Missionaries",
