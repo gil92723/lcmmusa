@@ -978,7 +978,7 @@
       "get-involved.heading-1": {
         "text": {
           "en": "Your support transforms lives.",
-          "zh": "您的支持，改變無數生命。"
+          "zh": "您的支持，改變生命。"
         }
       },
       "get-involved.paragraph-1": {
@@ -991,8 +991,8 @@
           ]
         },
         "text": {
-          "en": "Every donation goes directly to medical missions and community programs, helping more families in need.",
-          "zh": "您的每一份奉獻都將直接用於醫療傳道及社區服務，幫助更多有需要的家庭。"
+          "en": "Every donation goes directly to medical missions and community programs, helping more of those in need.",
+          "zh": "您的每一份奉獻都將直接用於醫療傳道及社區服務，幫助更多有需要的人。"
         }
       },
       "get-involved.link-1": {
@@ -1318,7 +1318,7 @@
       "about-hero.title-1": {
         "text": {
           "en": "Healthcare as a bridge to spread the Gospel.",
-          "zh": "以醫療為橋樑， 傳揚基督大愛。"
+          "zh": "以醫療為橋樑， 傳揚主愛。"
         }
       },
       "about-hero.paragraph-2": {

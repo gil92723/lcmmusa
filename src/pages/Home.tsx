@@ -59,7 +59,7 @@ export default function Home() {
         id="about"
         className="transition-colors duration-300 home-hero home-hero-section-1"
       >
-        <div className="max-w-6xl mx-auto px-6 pt-32 pb-8 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+        <div className="max-w-6xl mx-auto px-6 pt-32 pb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
           <div className="max-w-2xl">
             <p
               {...attrs(
@@ -112,7 +112,7 @@ export default function Home() {
             </AppLink>
           </div>
         </div>
-        <div className="w-full px-6 pb-8 max-w-6xl mx-auto">
+        <div className="w-full px-6 pb-16 max-w-6xl mx-auto">
           <MinistryCarousel />
         </div>
       </section>
