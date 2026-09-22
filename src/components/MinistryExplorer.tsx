@@ -155,7 +155,7 @@ export default function MinistryExplorer({
 
   return (
     <>
-      <section className="programs mission-vision-section-1">
+      <section className="programs mission-vision-section-1 ministry-overview">
         <div className="mx-auto max-w-6xl px-6">
           <MinistryCards />
         </div>
