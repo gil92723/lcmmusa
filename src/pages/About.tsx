@@ -455,7 +455,7 @@ export default function About() {
               >
                 {text("leadership.paragraph-3")}
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
                 <div className="rounded-xl px-4 py-3 flex items-center gap-3 film-section-1-box-4">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0 programs-section-1-box-6">
                     {"L"}
