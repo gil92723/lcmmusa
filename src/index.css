@@ -70,13 +70,16 @@
 @media (max-width: 639px) {
   .ministry-card {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .ministry-card > img {
     width: 88px;
     height: auto;
+    aspect-ratio: auto;
+    align-self: stretch;
     flex-shrink: 0;
+    object-fit: cover;
     margin: 12px 0 12px 12px;
     border-radius: 8px;
   }
