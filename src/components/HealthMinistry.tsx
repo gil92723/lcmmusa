@@ -1,4 +1,5 @@
 import type { SanityImageSource } from "@sanity/image-url"
+import { useState } from "react"
 import { usePageCopy } from "@/lib/ui"
 import useSanityQuery from "@/sanity/useSanityQuery"
 import { imageUrl } from "@/sanity/posts"
@@ -108,8 +109,136 @@ export default function HealthMinistry() {
   const embedUrl = video
     ? youtubeEmbedUrl(video.youtubeUrl)
     : null
+  const [visibleTalkCount, setVisibleTalkCount] = useState(5)
+  const [expandedTalk, setExpandedTalk] = useState<string | null>(null)
 
   function renderEntries(entries: Entry[], isEvent: boolean) {
+    if (!isEvent) {
+      const visibleTalks = entries.slice(0, visibleTalkCount)
+      const remaining = entries.length - visibleTalks.length
+
+      return (
+        <div className="space-y-2">
+          {visibleTalks.map((entry) => {
+            const title =
+              localized(entry.titleEn, entry.titleZh) ||
+              label("Untitled", "未命名")
+
+            const speaker = localized(entry.speakerEn, entry.speakerZh)
+            const description = localized(
+              entry.descriptionEn,
+              entry.descriptionZh,
+            )
+            const poster = imageUrl(entry.poster, 1200)
+            const expanded = expandedTalk === entry._id
+            const descriptionId = `talk-description-${entry._id}`
+
+            return (
+              <article
+                key={entry._id}
+                className="programs-section-1-box-1 rounded-xl p-3"
+              >
+                <h4
+                  id={`talk-title-${entry._id}`}
+                  tabIndex={-1}
+                  className="text-base font-bold leading-snug home-hero-section-1-title-1"
+                >
+                  {title}
+                </h4>
+
+                {(entry.date || speaker) && (
+                  <p className="mt-1 flex flex-wrap items-baseline gap-x-2 text-sm home-hero-section-1-text-2">
+                    {entry.date && (
+                      <time dateTime={entry.date}>
+                        {formatDate(entry.date, false)}
+                      </time>
+                    )}
+
+                    {entry.date && speaker && (
+                      <span aria-hidden="true">·</span>
+                    )}
+
+                    {speaker && <span>{speaker}</span>}
+                  </p>
+                )}
+
+                <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold home-hero-section-1-text-1">
+                  {description && (
+                    <button
+                      type="button"
+                      aria-expanded={expanded}
+                      aria-controls={descriptionId}
+                      onClick={() =>
+                        setExpandedTalk(expanded ? null : entry._id)
+                      }
+                      className="cursor-pointer underline underline-offset-4"
+                    >
+                      {expanded
+                        ? label("Hide description ▴", "收起介紹 ▴")
+                        : label("Read description ▾", "查看介紹 ▾")}
+                    </button>
+                  )}
+
+                  {poster && (
+                    <a
+                      href={poster}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4"
+                    >
+                      {label("View poster ↗", "查看海報 ↗")}
+                    </a>
+                  )}
+
+                  {entry.videoUrl && (
+                    <a
+                      href={entry.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4"
+                    >
+                      {label("Watch recording ↗", "觀看錄影 ↗")}
+                    </a>
+                  )}
+                </div>
+
+                {description && (
+                  <p
+                    id={descriptionId}
+                    hidden={!expanded}
+                    className="mt-3 whitespace-pre-line text-sm leading-relaxed home-hero-section-1-text-2"
+                  >
+                    {description}
+                  </p>
+                )}
+              </article>
+            )
+          })}
+
+          {remaining > 0 && (
+            <button
+              type="button"
+              onClick={() => {
+                const nextTalk = entries[visibleTalkCount]
+                setVisibleTalkCount((count) => count + 5)
+
+                requestAnimationFrame(() => {
+                  document
+                    .getElementById(`talk-title-${nextTalk._id}`)
+                    ?.focus()
+                })
+              }}
+              className="mt-3 rounded-lg border border-current/20 px-4 py-2 text-sm font-semibold home-hero-section-1-text-1"
+            >
+              {label(
+                `Show more talks (${remaining} remaining)`,
+                `顯示更多講座（尚有 ${remaining} 場）`,
+              )}
+            </button>
+          )}
+        </div>
+      )
+    }
     return (
       <div className="flex flex-col gap-6">
         {entries.map((entry) => {
