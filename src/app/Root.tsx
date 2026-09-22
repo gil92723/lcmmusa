@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import { Outlet, useLocation } from "react-router"
-import { PreferencesProvider } from "@/context"
-import SiteHeader from "@/components/SiteHeader"
-import SiteFooter from "@/components/SiteFooter"
+import { PreferencesProvider } from "@/app/context"
+import SiteHeader from "@/components/layout/SiteHeader"
+import SiteFooter from "@/components/layout/SiteFooter"
 import { pageKey, usePageCopy } from "@/lib/ui"
 
 function SiteLayout() {

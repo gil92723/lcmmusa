@@ -1,5 +1,5 @@
 import { createBrowserRouter, createHashRouter, Link } from "react-router"
-import Root from "@/Root"
+import Root from "@/app/Root"
 import Home from "@/pages/Home"
 import About from "@/pages/About"
 import Ministries from "@/pages/Ministries"

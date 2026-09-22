@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import { useLocation } from "react-router"
-import { useLang, useTheme } from "@/context"
+import { useLang, useTheme } from "@/app/context"
 import { AppLink, asset, usePageCopy, pageKey } from "@/lib/ui"
 export default function SiteHeader() {
   const location = useLocation()

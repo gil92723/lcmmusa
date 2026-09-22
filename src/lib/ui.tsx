@@ -7,7 +7,7 @@ import {
   type ReactNode,
 } from "react"
 import { Link } from "react-router"
-import { useLang } from "@/context"
+import { useLang } from "@/app/context"
 import translations from "@/data/translations.json"
 
 export type PageKey = keyof typeof translations

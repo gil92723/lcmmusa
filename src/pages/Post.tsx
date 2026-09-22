@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router"
 import { PortableText, type PortableTextComponents } from "@portabletext/react"
-import { useLang } from "@/context"
+import { useLang } from "@/app/context"
 import { POST_QUERY, imageUrl, formattedDate, type Post as PostDocument } from "@/sanity/posts"
 import useSanityQuery from "@/sanity/useSanityQuery"
 

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap");
 @import "tailwindcss";
-@import "./styles/layout.css";
-@import "./styles/phoenix.css";
+@import "./styles/globals.css";
 
 /* Ministry summaries remain visible on touch, mouse, and keyboard. */
 .ministry-card { transition: box-shadow 160ms ease; }
