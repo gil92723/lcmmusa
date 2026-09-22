@@ -156,7 +156,7 @@ export default function HealthMinistry() {
                       `${title}海報`,
                     )}
                     loading="lazy"
-                    className="max-h-[32rem] w-full object-contain"
+                    className="max-h-[45rem] w-full object-contain"
                   />
                 </a>
               )}
@@ -181,9 +181,21 @@ export default function HealthMinistry() {
                 )}
 
                 {description && (
-                  <p className="whitespace-pre-line leading-relaxed home-hero-section-1-text-2">
-                    {description}
-                  </p>
+                  isEvent ? (
+                    <p className="whitespace-pre-line leading-relaxed home-hero-section-1-text-2">
+                      {description}
+                    </p>
+                  ) : (
+                    <details className="text-sm">
+                      <summary className="cursor-pointer font-semibold home-hero-section-1-text-1 focus-visible:outline-2 focus-visible:outline-offset-4">
+                        {label("Read description", "查看活動介紹")}
+                      </summary>
+
+                      <p className="mt-3 whitespace-pre-line leading-relaxed home-hero-section-1-text-2">
+                        {description}
+                      </p>
+                    </details>
+                  )
                 )}
 
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold home-hero-section-1-text-1">
