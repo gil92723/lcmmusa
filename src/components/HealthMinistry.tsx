@@ -233,6 +233,11 @@ export default function HealthMinistry() {
 
   return (
     <div className="mx-auto max-w-6xl space-y-12 px-6">
+      <div
+        className={`grid items-start gap-8 ${
+          video && embedUrl ? "lg:grid-cols-2" : ""
+        }`}
+      >
       <header>
         <h2 className="mb-5 text-3xl font-bold home-hero-section-1-title-1">
           {text("programs.subheading-1")}
@@ -254,7 +259,26 @@ export default function HealthMinistry() {
           </p>
         </div>
       </header>
-
+      {video && embedUrl && (
+        <section aria-label={label("Ministry introduction", "事工介紹")}>
+          <div className="aspect-video overflow-hidden rounded-2xl">
+            <iframe
+              key={video.youtubeUrl}
+              src={embedUrl}
+              title={
+                localized(video.titleEn, video.titleZh) ||
+                label("Ministry introduction", "事工介紹")
+              }
+              className="h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </section>
+      )}
+      </div>
       {loading && (
         <p role="status">
           {label("Loading…", "載入中……")}
@@ -277,26 +301,6 @@ export default function HealthMinistry() {
             {label("Try again", "重試")}
           </button>
         </div>
-      )}
-
-      {video && embedUrl && (
-        <section aria-label={label("Ministry introduction", "事工介紹")}>
-          <div className="aspect-video overflow-hidden rounded-2xl">
-            <iframe
-              key={video.youtubeUrl}
-              src={embedUrl}
-              title={
-                localized(video.titleEn, video.titleZh) ||
-                label("Ministry introduction", "事工介紹")
-              }
-              className="h-full w-full border-0"
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </section>
       )}
 
       <section aria-labelledby="health-events-heading">
