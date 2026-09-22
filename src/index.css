@@ -2,7 +2,6 @@
 @import "tailwindcss";
 @import "./styles/layout.css";
 @import "./styles/phoenix.css";
-@plugin "@tailwindcss/typography";
 
 /* Ministry summaries remain visible on touch, mouse, and keyboard. */
 .ministry-card { transition: box-shadow 160ms ease; }
@@ -13,8 +12,7 @@
   .ministry-card { transition: none; }
 }
 
-/* The Phoenix style sheets retain the approved design; new components can use Tailwind. */
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -148,4 +146,49 @@
 
 .ministry-overview .ministry-card > div > span {
   padding-top: 0;
+}
+
+/* Compact upcoming events */
+.upcoming-event-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.upcoming-event-card > a {
+  display: block;
+  flex: 0 0 clamp(88px, 18vw, 144px);
+  padding: 12px 0 12px 12px;
+}
+
+.upcoming-event-card > a > img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.upcoming-event-card > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  gap: 8px;
+  overflow-wrap: anywhere;
+}
+
+.upcoming-event-card > div > * {
+  margin-block: 0;
+}
+
+.upcoming-event-card h4 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.upcoming-event-card p,
+.upcoming-event-card > div > a {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }

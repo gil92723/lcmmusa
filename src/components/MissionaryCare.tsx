@@ -344,7 +344,7 @@ export default function MissionaryCare() {
                 return (
                   <article
                     key={event._id}
-                    className="programs-section-1-box-1 overflow-hidden rounded-2xl"
+                    className="upcoming-event-card programs-section-1-box-1 overflow-hidden rounded-2xl"
                   >
                     {poster && (
                       <a
