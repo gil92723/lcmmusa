@@ -1,6 +1,6 @@
 import type { SanityImageSource } from "@sanity/image-url"
 import { client } from "./client"
-import { imageUrl } from "./posts"
+import { imageUrl } from "./images"
 
 export type HomepageHighlight = {
   _id: string

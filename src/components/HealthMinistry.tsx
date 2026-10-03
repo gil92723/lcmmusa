@@ -2,7 +2,7 @@ import type { SanityImageSource } from "@sanity/image-url"
 import { useState } from "react"
 import { usePageCopy } from "@/lib/ui"
 import useSanityQuery from "@/sanity/useSanityQuery"
-import { imageUrl } from "@/sanity/posts"
+import { imageUrl } from "@/sanity/images"
 import { youtubeEmbedUrl } from "@/sanity/videos"
 
 type Entry = {
